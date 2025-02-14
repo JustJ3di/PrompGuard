@@ -7,3 +7,5 @@ Creare nuovo dataset json con
 Allenare un modello tale per cui dato un prompt mi dice il punteggio associato, quindi allenarlo secondo teniche di verosomiglianza testuale.
 ### 3) Creare un tool  :white_check_mark:
 Creare un tool che offre la possibilità ad un utente finale, dato un prompt di avere un punteggio relativo a quanta probabilità a questo di generargli del codice funzionante e sicuro.
+
+HOW THE TOOL WORK
