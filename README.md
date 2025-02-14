@@ -27,6 +27,7 @@ The result is an array of similarity scores, where each value represents how sim
 Each existing prompt in the dataset has a predefined score.
 
 The scores are multiplied by their corresponding similarity values, generating a weighted score array:
+#### weighted_scores = scores * similarities
 
 
 
@@ -34,7 +35,7 @@ The scores are multiplied by their corresponding similarity values, generating a
 
 The final score is obtained by summing the weighted scores and normalizing them by the sum of similarities:
 
-
+#### final_score = sum(scores * similarities) / sum(similarities)
 
 This ensures that prompts with higher similarity have a greater influence on the final score.
 
