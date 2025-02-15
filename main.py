@@ -41,7 +41,6 @@ indice 12 Persona/Memetic
 #PASS@K per ogni prompt per gli indici vedere tabella di sopra.
 result =[]
 for i in data:
-    print(i["id"])
     c = 0 #correct code
     n = 6 #total code
     k = 1 #
@@ -56,8 +55,6 @@ for i in data:
 
 
 print("Pass@k "+str(np.mean(result)))
-
-all_pass = [0.7407407407407407,0.7685185185185186,0.7685185185185186,0.7685185185185186,0.7314814814814814]
 
 
 result.clear()
@@ -77,8 +74,6 @@ for i in data:
     result.append(metric_pass(n,k,c))
 
 print(np.mean(result))
-
-all_vulnerable = [0.5462962962962963,0.4907407407407407,0.5092592592592592,0.5277777777777778,0.4907407407407407]
 
 
 ordered_data = sorted(data,key=lambda data: data.get('id'))
@@ -102,7 +97,7 @@ def mean(a,b):
 for i in ordered_data:
     tmp = []
     for j in key_check:
-        print(i[j])
+        
         if(i[j][1]!=-1 and i[j][2] != -1):
             tmp.append(mean(i[j][1],i[j][2])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
@@ -111,7 +106,7 @@ for i in ordered_data:
     tmp.clear()
 
     for j in key_check:
-        print(i[j])
+        
         if(i[j][4]!=-1 and i[j][5] != -1):
             tmp.append(mean(i[j][4],i[j][5])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
@@ -120,7 +115,7 @@ for i in ordered_data:
     tmp.clear()
 
     for j in key_check:
-        print(i[j])
+        
         if(i[j][7]!=-1 and i[j][8] != -1):
             tmp.append(mean(i[j][7],i[j][8])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
@@ -129,7 +124,7 @@ for i in ordered_data:
     tmp.clear()
 
     for j in key_check:
-        print(i[j])
+        
         if(i[j][10]!=-1 and i[j][11] != -1):
             tmp.append(mean(i[j][10],i[j][11])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
@@ -138,7 +133,7 @@ for i in ordered_data:
     tmp.clear()
 
     for j in key_check:
-        print(i[j])
+        
         if(i[j][13]!=-1 and i[j][14] != -1):
             tmp.append(mean(i[j][13],i[j][14])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
@@ -163,10 +158,6 @@ with open("prompt.json","w") as fp:
     json.dump(ordered_data,fp = fp)
 
 
-for i in ordered_data:
-    for j in prompt_tecnique:
-        print(i[j])
-
 
 dataset = {}
 
@@ -174,7 +165,7 @@ dataset = {}
 for i in ordered_data:
     tmp = []
     for j in key_check:
-        print(i[j])
+        
         if(i[j][1]!=-1 and i[j][2] != -1):
             tmp.append(mean(i[j][1],i[j][2])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
@@ -183,7 +174,7 @@ for i in ordered_data:
     tmp.clear()
 
     for j in key_check:
-        print(i[j])
+        
         if(i[j][4]!=-1 and i[j][5] != -1):
             tmp.append(mean(i[j][4],i[j][5])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
@@ -192,7 +183,7 @@ for i in ordered_data:
     tmp.clear()
 
     for j in key_check:
-        print(i[j])
+        
         if(i[j][7]!=-1 and i[j][8] != -1):
             tmp.append(mean(i[j][7],i[j][8])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
@@ -201,7 +192,7 @@ for i in ordered_data:
     tmp.clear()
 
     for j in key_check:
-        print(i[j])
+        
         if(i[j][10]!=-1 and i[j][11] != -1):
             tmp.append(mean(i[j][10],i[j][11])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
@@ -210,7 +201,7 @@ for i in ordered_data:
     tmp.clear()
 
     for j in key_check:
-        print(i[j])
+       
         if(i[j][13]!=-1 and i[j][14] != -1):
             tmp.append(mean(i[j][13],i[j][14])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
@@ -226,7 +217,10 @@ for i in ordered_data:
 
 
 
-
-
 with open("dataset.json","w") as fp:
     json.dump(dataset,fp = fp)
+
+with open("Tool/dataset.json","w") as fp:
+    json.dump(dataset,fp = fp)
+
+print("DATASET AGGIORNATO")
