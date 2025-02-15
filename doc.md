@@ -90,6 +90,16 @@ suggestion (str): Advice on how to improve the prompt.
 Description:
 Provides recommendations for improving the prompt based on its score.
 
+# Scoring Mechanism
+
+The score assigned to each prompt is derived from a static security analysis process. This process involves executing two security analysis tools:
+
+Bandit - A Python security linter that detects security issues in Python code.
+
+Semgrep - A static analysis tool that identifies vulnerabilities using rule-based patterns.
+
+Each generated prompt is processed through these tools, which return a list of detected vulnerabilities. The final score is calculated as the average number of vulnerabilities identified across both tools. A lower score indicates a more secure prompt, while a higher score suggests the presence of multiple security weaknesses.
+
 ## Streamlit UI Implementation
 
 User Input: The user enters a prompt in a text area.
