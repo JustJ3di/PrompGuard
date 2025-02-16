@@ -113,11 +113,11 @@ Each generated prompt is processed through these tools, which return a list of d
 <li>Classification: When the "Classify" button is pressed, the application:
   <ul>Computes similarity scores.
   
-    <li>Assigns a weighted score.</li>
-    
-    <li>Checks for vulnerabilities.</li>
-    
-    <li>Displays similarity distribution.</li>
+  <li>Assigns a weighted score.</li>
+  
+  <li>Checks for vulnerabilities.</li>
+  
+  <li>Displays similarity distribution.</li>
   
   <li>Provides improvement suggestions.</li>
 </li>
