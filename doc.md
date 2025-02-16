@@ -13,18 +13,18 @@ logging: To log operations and user inputs
 
 sentence_transformers: To generate text embeddings and calculate similarity
 ## Functions
-<code>
-### load_dataset(json_file)
-</code>
-Parameters:
 
-json_file (str): Path to the dataset file in JSON format.
+### load_dataset(json_file)
+#### Parameters:
+    <ul>
+      <li>json_file (str): Path to the dataset file in JSON format.</li>
+    </ul>
 
 Returns:
 
-prompts (list of dict): A list of prompts, each containing a text (string) and score (float).
+<ul><li>prompts (list of dict): A list of prompts, each containing a text (string) and score (float).</li></ul>
 
-Description:
+#### Description:
 Loads and processes the dataset from the JSON file. The dataset is structured as a dictionary where categories contain prompts with associated scores.
 
 
