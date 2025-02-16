@@ -142,6 +142,7 @@ The application logs important events such as:
 <li>Errors encountered.</li>
 </ul>
 # Dataset example data
+
 ```javascript
 
 {
