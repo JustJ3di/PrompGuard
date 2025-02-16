@@ -13,7 +13,9 @@ logging: To log operations and user inputs
 
 sentence_transformers: To generate text embeddings and calculate similarity
 ## Functions
+'''python
 ### load_dataset(json_file)
+'''
 Parameters:
 
 json_file (str): Path to the dataset file in JSON format.
