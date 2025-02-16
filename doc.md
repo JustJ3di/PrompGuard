@@ -37,6 +37,7 @@ Loads and processes the dataset from the JSON file. The dataset is structured as
 
 <li>model (SentenceTransformer): The language model used to generate embeddings.</li>
 </ul>
+
 #### Returns:
 
 embeddings (tensor): Precomputed embeddings for all stored prompts.
@@ -129,17 +130,17 @@ Logging: User input, classification results, and errors are logged in log.txt.
 # Logging
 
 The application logs important events such as:
+<ul>
+<li>Dataset loading.</li>
 
-Dataset loading.
+<li>User input.</li>
 
-User input.
+<li>Classification results.</li>
 
-Classification results.
+<li>Vulnerabilities detected.</li>
 
-Vulnerabilities detected.
-
-Errors encountered.
-
+<li>Errors encountered.</li>
+</ul>
 # Dataset example data
 ```javascript
 
