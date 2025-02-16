@@ -110,10 +110,10 @@ Each generated prompt is processed through these tools, which return a list of d
 ## Streamlit UI Implementation
 <ul>
 <li>User Input: The user enters a prompt in a text area.</li>
-
 <li>Classification: When the "Classify" button is pressed, the application:
-  <ul>Computes similarity scores.
-  
+    <ul>
+    <li>Computes similarity scores.</li>
+    
   <li>Assigns a weighted score.</li>
   
   <li>Checks for vulnerabilities.</li>
@@ -121,10 +121,10 @@ Each generated prompt is processed through these tools, which return a list of d
   <li>Displays similarity distribution.</li>
   
   <li>Provides improvement suggestions.</li>
+  </ul>
 </li>
-</ul>
 
-Logging: User input, classification results, and errors are logged in log.txt.
+<li> Logging: User input, classification results, and errors are logged in log.txt.</li>
 </ul>
 
 # Logging
