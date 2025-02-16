@@ -20,7 +20,7 @@ sentence_transformers: To generate text embeddings and calculate similarity
 <li>json_file (str): Path to the dataset file in JSON format.</li>
   
 
-Returns:
+#### Returns:
 
 <li>prompts (list of dict): A list of prompts, each containing a text (string) and score (float).</li>
 
@@ -32,20 +32,21 @@ Loads and processes the dataset from the JSON file. The dataset is structured as
 
 #### Parameters:
 
+<ul>
 <li>prompts (list of dict): List of prompts.</li>
 
-model (SentenceTransformer): The language model used to generate embeddings.
-
-Returns:
+<li>model (SentenceTransformer): The language model used to generate embeddings.</li>
+</ul>
+#### Returns:
 
 embeddings (tensor): Precomputed embeddings for all stored prompts.
 
-Description:
+#### Description:
 Converts the text of each prompt into numerical embeddings using SentenceTransformer.
 
 ### classify_prompt(new_prompt, model, embeddings, prompts)
 
-Parameters:
+#### Parameters:
 <ul>
 <li>new_prompt (str): The user-provided prompt.</li>
 
@@ -56,7 +57,7 @@ Parameters:
 <li>prompts (list of dict): List of stored prompts.</li>
 </ul>
 
-Returns:
+#### Returns:
 
 final_score (float): Weighted mean score based on similarity.
 
@@ -64,62 +65,66 @@ best_match_score (float): Highest similarity score.
 
 similarities (array): Similarity scores with all stored prompts.
 
-Description:
+#### Description:
 Embeds the new prompt, calculates similarity with stored prompts, and computes a weighted mean score.
 
 ### analyze_vulnerabilities(prompt)
 
-Parameters:
+#### Parameters:
 
-prompt (str): The user-provided prompt.
+<li>prompt (str): The user-provided prompt.</li>
 
 Returns:
 
-vulnerabilities (list of str): Identified security risks in the prompt.
+<li>vulnerabilities (list of str): Identified security risks in the prompt.</li>
 
-Description:
+#### Description:
 Checks for common security vulnerabilities like eval(), input(), and unsafe file operations.
+
+
 
 ### improvement_suggestions(score)
 
-Parameters:
+####Parameters:
 
-score (float): The computed score of the prompt.
+<li>score (float): The computed score of the prompt.</li>
 
-Returns:
+#### Returns:
 
-suggestion (str): Advice on how to improve the prompt.
+<li>suggestion (str): Advice on how to improve the prompt.</li>
 
-Description:
+#### Description:
 Provides recommendations for improving the prompt based on its score.
 
 # Scoring Mechanism
 
 The score assigned to each prompt is derived from a static security analysis process. This process involves executing two security analysis tools:
-
-Bandit - A Python security linter that detects security issues in Python code.
-
-Semgrep - A static analysis tool that identifies vulnerabilities using rule-based patterns.
+<ul>
+  <li>Bandit - A Python security linter that detects security issues in Python code.</li>
+  <li>Semgrep - A static analysis tool that identifies vulnerabilities using rule-based patterns.</li>
+</ul>
 
 Each generated prompt is processed through these tools, which return a list of detected vulnerabilities. The final score is calculated as the average number of vulnerabilities identified across both tools. A lower score indicates a more secure prompt, while a higher score suggests the presence of multiple security weaknesses.
 
 ## Streamlit UI Implementation
+<ul>
+<li>User Input: The user enters a prompt in a text area.</li>
 
-User Input: The user enters a prompt in a text area.
+<li>Classification: When the "Classify" button is pressed, the application:
+<ul>Computes similarity scores.
 
-Classification: When the "Classify" button is pressed, the application:
+<li>Assigns a weighted score.</li>
 
-Computes similarity scores.
+<li>Checks for vulnerabilities.</li>
 
-Assigns a weighted score.
+<li>Displays similarity distribution.</li>
 
-Checks for vulnerabilities.
+<li>Provides improvement suggestions.</li>
+</ul>
 
-Displays similarity distribution.
-
-Provides improvement suggestions.
 
 Logging: User input, classification results, and errors are logged in log.txt.
+</ul>
 
 # Logging
 
