@@ -16,13 +16,13 @@ sentence_transformers: To generate text embeddings and calculate similarity
 
 ### load_dataset(json_file)
 #### Parameters:
-    <ul>
-      <li>json_file (str): Path to the dataset file in JSON format.</li>
-    </ul>
+
+<li>json_file (str): Path to the dataset file in JSON format.</li>
+  
 
 Returns:
 
-<ul><li>prompts (list of dict): A list of prompts, each containing a text (string) and score (float).</li></ul>
+<li>prompts (list of dict): A list of prompts, each containing a text (string) and score (float).</li>
 
 #### Description:
 Loads and processes the dataset from the JSON file. The dataset is structured as a dictionary where categories contain prompts with associated scores.
@@ -30,9 +30,9 @@ Loads and processes the dataset from the JSON file. The dataset is structured as
 
 ### preprocess_prompts(prompts, model)
 
-Parameters:
+#### Parameters:
 
-prompts (list of dict): List of prompts.
+<li>prompts (list of dict): List of prompts.</li>
 
 model (SentenceTransformer): The language model used to generate embeddings.
 
@@ -46,14 +46,15 @@ Converts the text of each prompt into numerical embeddings using SentenceTransfo
 ### classify_prompt(new_prompt, model, embeddings, prompts)
 
 Parameters:
+<ul>
+<li>new_prompt (str): The user-provided prompt.</li>
 
-new_prompt (str): The user-provided prompt.
+<li>model (SentenceTransformer): The language model used for embeddings.</li>
 
-model (SentenceTransformer): The language model used for embeddings.
+<li>embeddings (tensor): Precomputed embeddings of stored prompts.</li>
 
-embeddings (tensor): Precomputed embeddings of stored prompts.
-
-prompts (list of dict): List of stored prompts.
+<li>prompts (list of dict): List of stored prompts.</li>
+</ul>
 
 Returns:
 
