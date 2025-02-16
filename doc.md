@@ -85,7 +85,7 @@ Checks for common security vulnerabilities like eval(), input(), and unsafe file
 
 ### improvement_suggestions(score)
 
-####Parameters:
+#### Parameters:
 
 <li>score (float): The computed score of the prompt.</li>
 
@@ -111,17 +111,17 @@ Each generated prompt is processed through these tools, which return a list of d
 <li>User Input: The user enters a prompt in a text area.</li>
 
 <li>Classification: When the "Classify" button is pressed, the application:
-<ul>Computes similarity scores.
-
-<li>Assigns a weighted score.</li>
-
-<li>Checks for vulnerabilities.</li>
-
-<li>Displays similarity distribution.</li>
-
-<li>Provides improvement suggestions.</li>
+  <ul>Computes similarity scores.
+  
+    <li>Assigns a weighted score.</li>
+    
+    <li>Checks for vulnerabilities.</li>
+    
+    <li>Displays similarity distribution.</li>
+  
+  <li>Provides improvement suggestions.</li>
+</li>
 </ul>
-
 
 Logging: User input, classification results, and errors are logged in log.txt.
 </ul>
