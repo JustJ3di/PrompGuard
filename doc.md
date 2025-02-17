@@ -66,13 +66,14 @@ best_match_score (float): Highest similarity score.
 
 similarities (array): Similarity scores with all stored prompts.
 
+
+#### Description:
+Embeds the new prompt, calculates similarity with stored prompts, and computes a weighted mean score.
+
 ##### Note:
 How final score is calulated:
 $\sum{similarity*score}/\sum{similarity}$
 Where the similarity and score are all the similiarity distribution around the input prompt.
-
-#### Description:
-Embeds the new prompt, calculates similarity with stored prompts, and computes a weighted mean score.
 
 ### analyze_vulnerabilities(prompt)
 
