@@ -80,7 +80,9 @@ Converts the text of each prompt into numerical embeddings using SentenceTransfo
 
 ##### Note:
 How final score is calulated:
-<ul><li>$\sum{similarity*score}/\sum{similarity}$</li></ul>
+<ul>
+  <li>$\sum{similarity*score}/\sum{similarity}$</li>
+</ul>
 Where the similarity and score are all the similiarity distribution around the input prompt.
 
 ### analyze_vulnerabilities(prompt)
