@@ -43,8 +43,7 @@ Loads and processes the dataset from the JSON file. The dataset is structured as
 </ul>
 
 #### Returns:
-
-embeddings (tensor): Precomputed embeddings for all stored prompts.
+<ul><li>embeddings (tensor): Precomputed embeddings for all stored prompts.</li></ul>
 
 #### Description:
 Converts the text of each prompt into numerical embeddings using SentenceTransformer.
@@ -64,19 +63,24 @@ Converts the text of each prompt into numerical embeddings using SentenceTransfo
 
 #### Returns:
 
-final_score (float): Weighted mean score based on similarity.
+<ul>
+  <li>final_score (float): Weighted mean score based on similarity.</li>
 
-best_match_score (float): Highest similarity score.
+  <li>best_match_score (float): Highest similarity score.</li>
 
-similarities (array): Similarity scores with all stored prompts.
+  <li>similarities (array): Similarity scores with all stored prompts.</li>
+
+</ul>
+
 
 
 #### Description:
-Embeds the new prompt, calculates similarity with stored prompts, and computes a weighted mean score.
+
+<ul><li>Embeds the new prompt, calculates similarity with stored prompts, and computes a weighted mean score.</li></ul>
 
 ##### Note:
 How final score is calulated:
-$\sum{similarity*score}/\sum{similarity}$
+<ul><li>$\sum{similarity*score}/\sum{similarity}$</li></ul>
 Where the similarity and score are all the similiarity distribution around the input prompt.
 
 ### analyze_vulnerabilities(prompt)
