@@ -1,6 +1,6 @@
 #Overview
 This project implements a Streamlit-based application that classifies user-provided prompts using a pre-trained language model. It assesses the prompt's similarity with a dataset of existing prompts and assigns a score based on similarity-weighted scoring. The application also checks for security vulnerabilities in the prompt and provides improvement suggestions.
-##Dependencies:
+## Dependencies:
 streamlit: For UI rendering
 
 json: To handle the dataset
