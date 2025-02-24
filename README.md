@@ -1,56 +1,31 @@
 # best_prompt
-## to do
-### 1) Formare un dataset comodo :white_check_mark:
-Creare nuovo dataset json con
-{ "CWE":{"prompt_type1":punteggio1,"prompt_type2":punteggio2...},"CWE":{"prompt_type1":punteggio1,...},...ecc} 
-### 2) Allenare modello preesistente tramite Ollama/hugging_face  :white_check_mark:
-Allenare un modello tale per cui dato un prompt mi dice il punteggio associato, quindi allenarlo secondo teniche di verosomiglianza testuale.
-### 3) Creare un tool  :white_check_mark:
-Creare un tool che offre la possibilità ad un utente finale, dato un prompt di avere un punteggio relativo a quanta probabilità a questo di generargli del codice funzionante e sicuro.
+alcolo delle Similarità
 
-HOW THE TOOL WORK
+    Il modello SentenceTransformer codifica il nuovo prompt in un embedding vettoriale.
+    Questo embedding viene confrontato con quelli dei prompt esistenti utilizzando il coseno di similarità (util.pytorch_cos_sim).
+    Il risultato è un array di similarità, in cui ogni valore rappresenta quanto il nuovo prompt è simile ai prompt nel dataset.
 
-Prompt Classification - Scoring Details
+Ponderazione dei Punteggi
 
-How the Score is Assigned
+    Ogni prompt esistente ha un punteggio associato nel dataset.
+    I punteggi vengono moltiplicati per le relative similarità, ottenendo un array di punteggi ponderati.
 
-1. Calculating Similarities
+weighted_scores=scores×similarities
+weighted_scores=scores×similarities
 
-The SentenceTransformer model encodes the new prompt into a vector embedding.
+Calcolo del Punteggio Finale
 
-The SentenceTransformer model encodes the new prompt into a vector embedding.
+    Il punteggio finale viene ottenuto facendo la somma dei punteggi ponderati e normalizzandoli con la somma delle similarità:
 
-The result is an array of similarity scores, where each value represents how similar the new prompt is to those in the dataset.
+final_score=∑(scores×similarities)∑similarities
+final_score=∑similarities∑(scores×similarities)​
 
-2. Weighting the Scores
+Questo assicura che i prompt con maggiore similarità abbiano più peso nel determinare il punteggio finale.
 
-Each existing prompt in the dataset has a predefined score.
+Selezione della Miglior Corrispondenza
 
-The scores are multiplied by their corresponding similarity values, generating a weighted score array:
-#### weighted_scores = scores * similarities
+    Il prompt con la similarità più alta viene identificato e il valore della similarità massima viene riportato.
 
+Salvataggio nei Log
 
-
-3. Final Score Calculation
-
-The final score is obtained by summing the weighted scores and normalizing them by the sum of similarities:
-
-#### final_score = sum(scores * similarities) / sum(similarities)
-
-This ensures that prompts with higher similarity have a greater influence on the final score.
-
-4. Best Match Selection
-
-The prompt with the highest similarity is identified, and its similarity value is reported as the "Best Match Similarity."
-
-5. Logging the Operation
-
-Every operation is recorded in log.txt, including:
-
-The input prompt
-
-The assigned weighted score
-
-The highest similarity match
-
-This method provides a dynamic and adaptive scoring system that considers how closely a new prompt aligns with existing ones in the dataset.
+    Ogni operazione viene registrata in log.txt, includendo il prompt, il punteggio assegnato e la similarità migliore.

@@ -1,7 +1,5 @@
-import streamlit as st
 import json
 import numpy as np
-import matplotlib.pyplot as plt
 import logging
 from sentence_transformers import SentenceTransformer, util
 
@@ -36,9 +34,10 @@ def classify_prompt(new_prompt, model, embeddings, prompts):
     best_match_score = similarities[best_match_idx].cpu().item()
     
     # Weighted scoring
-    
     scores = np.array([p["score"] for p in prompts])
-    tau = 0.3  # Ignora le similarità sotto questa soglia
+    #weighted_scores = scores * similarities.cpu().numpy()
+    #final_score = sum(weighted_scores) / sum(similarities.cpu().numpy()) #weighted mean for the score
+    tau = 0.5  # Ignora le similarità sotto questa soglia
     filtered_indices = np.where(similarities.cpu().numpy() > tau)[0]
     if len(filtered_indices) > 0:
         filtered_scores = np.array([scores[i] for i in filtered_indices])
@@ -47,19 +46,7 @@ def classify_prompt(new_prompt, model, embeddings, prompts):
         final_score = sum(weighted_scores) / sum(filtered_similarities)
     else:
         final_score = np.mean(scores)  # Default nel caso in cui nessun prompt superi la soglia
-
-    '''
-    weighted_scores = scores * similarities.cpu().numpy()
-    final_score = sum(weighted_scores) / sum(similarities.cpu().numpy()) #weighted mean for the score
     
-    scores = np.array([p["score"] for p in prompts])
-    min_score = min(scores)
-    max_score = max(scores)
-    normalized_scores = (scores - min_score) / (max_score - min_score)
-    weighted_scores = normalized_scores * similarities.cpu().numpy()
-    final_score = (sum(weighted_scores) / sum(similarities.cpu().numpy())) * (max_score - min_score) + min_score
-    '''
-
     logging.info(f"Best match similarity: {best_match_score}")
     logging.info(f"Final calculated score: {final_score}")
     
@@ -75,46 +62,38 @@ def analyze_vulnerabilities(prompt):
         vulnerabilities.append("File handling risk: Ensure proper access control and validation.")
     return vulnerabilities
 
-# UI with Streamlit
-st.title("Prompt Classification with LLM")
-st.write("Enter a prompt to get the assigned score, similarity, and security suggestions.")
+# Main execution block
+def main():
+    model = SentenceTransformer("all-MiniLM-L6-v2")
+    json_file = "dataset_secure.json"
+    logging.info("Initializing model and loading dataset")
+    prompts = load_dataset(json_file)
+    embeddings = preprocess_prompts(prompts, model)
+    logging.info("Model and dataset ready")
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
-json_file = "dataset_secure.json"
-logging.info("Initializing model and loading dataset")
-prompts = load_dataset(json_file)
-embeddings = preprocess_prompts(prompts, model)
-logging.info("Model and dataset ready")
-
-new_prompt = st.text_area("Enter your prompt:")
-if st.button("Classify"):
-    if new_prompt:
+    while True:
+        new_prompt = input("Enter your prompt (or type 'exit' to quit): ")
+        if new_prompt.lower() == 'exit':
+            break
+        
         try:
             logging.info(f"Processing new prompt classification: {new_prompt}")
-            score, similarity, similarities = classify_prompt(new_prompt, model, embeddings, prompts)
+            score, similarity, _ = classify_prompt(new_prompt, model, embeddings, prompts)
             vulnerabilities = analyze_vulnerabilities(new_prompt)
             
-            st.metric(label="Assigned Score", value=round(score, 2))
-            st.metric(label="Similarity", value=f"{similarity:.2f}")
+            print(f"\nAssigned Score: {round(score, 2)}")
+            print(f"Similarity: {similarity:.2f}")
             
             if vulnerabilities:
-                st.warning("⚠️ Potential Vulnerabilities Found:")
+                print("\n⚠️ Potential Vulnerabilities Found:")
                 for vuln in vulnerabilities:
-                    st.write(f"- {vuln}")
-            
-            # Plot similarity distribution
-            fig, ax = plt.subplots()
-            ax.hist(similarities, bins=10, color='skyblue', edgecolor='black')
-            ax.set_title("Similarity Distribution")
-            ax.set_xlabel("Similarity Score")
-            ax.set_ylabel("Frequency")
-            st.pyplot(fig)
+                    print(f"- {vuln}")
             
             logging.info("Classification process completed successfully")
         
         except ValueError as e:
             logging.error(f"Error during classification: {e}")
-            st.error(str(e))
-    else:
-        logging.warning("User submitted an empty prompt")
-        st.warning("Please enter a valid prompt.")
+            print(f"Error: {e}")
+
+if __name__ == "__main__":
+    main()

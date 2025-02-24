@@ -98,7 +98,7 @@ for i in ordered_data:
     tmp = []
     for j in key_check:
         
-        if(i[j][1]!=-1 and i[j][2] != -1):
+        if(i[j][1]!=-1 and i[j][2] != -1): #Calcolo passe@1k 
             tmp.append(mean(i[j][1],i[j][2])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
             tmp.append(10)
@@ -142,7 +142,7 @@ for i in ordered_data:
 
 
     for t in tmp:
-        basis_statistic.update({i["id"]:[med_basic,med_naive,med_CWE,med_Comp,med_meme]})
+        basis_statistic.update({i["id"]:{i["Basic"]:med_basic,i["Naive-Secure"]:med_naive,i["CWE-Specific"]:med_CWE,i["Comprehensive"]:med_Comp,i["Persona/Memetic Proxy"]:med_meme}})
   
 
         
@@ -150,7 +150,7 @@ for i in ordered_data:
 #{id(cwe):[ARRAY CON I RISULTATI]}
         
 
-print(basis_statistic)
+#print(basis_statistic)
 with  open("new.json","w") as fp:
     json.dump(basis_statistic,fp=fp)
 
@@ -162,11 +162,11 @@ with open("prompt.json","w") as fp:
 dataset = {}
 
 
-for i in ordered_data:
+for i in ordered_data: #PER OGNI CWE, QUINDI ID DEL DATASET
     tmp = []
     for j in key_check:
         
-        if(i[j][1]!=-1 and i[j][2] != -1):
+        if(i[j][1]!=-1 and i[j][2] != -1): #risultati basic prompt
             tmp.append(mean(i[j][1],i[j][2])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
             tmp.append(10)
@@ -175,7 +175,7 @@ for i in ordered_data:
 
     for j in key_check:
         
-        if(i[j][4]!=-1 and i[j][5] != -1):
+        if(i[j][4]!=-1 and i[j][5] != -1): #risultati naive-secure
             tmp.append(mean(i[j][4],i[j][5])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
             tmp.append(10)
@@ -184,7 +184,7 @@ for i in ordered_data:
 
     for j in key_check:
         
-        if(i[j][7]!=-1 and i[j][8] != -1):
+        if(i[j][7]!=-1 and i[j][8] != -1): #rislultati cwe-specific
             tmp.append(mean(i[j][7],i[j][8])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
             tmp.append(10)
@@ -193,7 +193,7 @@ for i in ordered_data:
 
     for j in key_check:
         
-        if(i[j][10]!=-1 and i[j][11] != -1):
+        if(i[j][10]!=-1 and i[j][11] != -1): #risultati chomprenshive
             tmp.append(mean(i[j][10],i[j][11])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
             tmp.append(10)
@@ -202,7 +202,7 @@ for i in ordered_data:
 
     for j in key_check:
        
-        if(i[j][13]!=-1 and i[j][14] != -1):
+        if(i[j][13]!=-1 and i[j][14] != -1): #risultati persona/memetic
             tmp.append(mean(i[j][13],i[j][14])) #bisogna inserire un punteggio negativo quando il codice non funziona ?
         else:
             tmp.append(10)
@@ -214,8 +214,69 @@ for i in ordered_data:
         dataset.update({i["id"]:{i["Basic"]:med_basic,i["Naive-Secure"]:med_naive,i["CWE-Specific"]:med_CWE,i["Comprehensive"]:med_Comp,i["Persona/Memetic Proxy"]:med_meme}})
 
 
+new_score_dataset = {}
+#bisogna considerare solo i codici sicuri
 
 
+for i in ordered_data:
+    count_secure = 0
+    count_code_pass = 0
+    for j in key_check:
+        
+        if (i[j][0] == True):
+            count_code_pass+=1
+        if(i[j][1]== 0 and i[j][2] ==  0) :#Calcolo passe@1k 
+            count_secure += 1  #bisogna inserire un punteggio negativo quando il codice non funziona ?
+    
+    med_basic = np.float64(count_secure/count_code_pass)
+
+    count_secure = 0
+    count_code_pass = 0
+    for j in key_check:
+
+        if (i[j][3] == True):
+            count_code_pass+=1
+        
+        if(i[j][4]== 0 and i[j][5] ==  0):
+            count_secure += 1 #bisogna inserire un punteggio negativo quando il codice non funziona ?
+
+    med_naive = np.float64(count_secure/count_code_pass)
+
+    count_secure=0
+    count_code_pass = 0
+    for j in key_check:
+
+        if (i[j][6] == True):
+            count_code_pass+=1
+        if(i[j][7]== 0 and i[j][8] ==  0):
+            count_secure += 1
+    med_CWE = np.float64(count_secure/count_code_pass)
+
+
+    count_secure=0
+    count_code_pass = 0
+    for j in key_check:
+        if (i[j][9] == True):
+            count_code_pass+=1        
+        if(i[j][10]== 0 and i[j][11] ==  0):
+            count_secure +=1
+    
+    med_Comp = np.float64((count_secure)/count_code_pass)
+
+    count_secure=0
+    count_code_pass = 0
+    for j in key_check:
+        if (i[j][12] == True):
+            count_code_pass+=1
+        if(i[j][13]== 0 and i[j][14] ==  0):
+            count_secure += 1
+    med_meme = np.float64((count_secure)/count_code_pass)
+
+   
+    new_score_dataset.update({i["id"]:{i["Basic"]:med_basic,i["Naive-Secure"]:med_naive,i["CWE-Specific"]:med_CWE,i["Comprehensive"]:med_Comp,i["Persona/Memetic Proxy"]:med_meme}})
+  
+
+print(new_score_dataset)
 
 with open("dataset.json","w") as fp:
     json.dump(dataset,fp = fp)
@@ -223,4 +284,16 @@ with open("dataset.json","w") as fp:
 with open("Tool/dataset.json","w") as fp:
     json.dump(dataset,fp = fp)
 
+with open("dataset_secure.json","w") as fp:
+    json.dump(new_score_dataset,fp = fp)
+
+
+with open("Tool/dataset_secure.json","w") as fp:
+    json.dump(new_score_dataset,fp = fp)
+
+
+
+
 print("DATASET AGGIORNATO")
+
+print("numero di prompt nel dataset: " + str(len(new_score_dataset)))
