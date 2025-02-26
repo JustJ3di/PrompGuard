@@ -63,8 +63,8 @@ def classify_prompt(new_prompt, model, embeddings, prompts, regressor):
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Classify a new prompt using a trained model.")
-    parser.add_argument("prompt", type=str, help="The new prompt to classify")
+    parser = argparse.ArgumentParser(description="Classify prompts from a file using a trained model.")
+    parser.add_argument("input_file", type=str, help="Path to the file containing prompts (one per line)")
     args = parser.parse_args()
 
     model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -78,9 +78,13 @@ if __name__ == "__main__":
     scores = [p["score"] for p in prompts]
     regressor = train_model(embeddings, scores)
 
-    # Classifica il nuovo prompt
-    score, similarity = classify_prompt(args.prompt, model, embeddings, prompts, regressor)
+    # Legge i prompt dal file
+    with open(args.input_file, "r") as f:
+        new_prompts = [line.strip() for line in f if line.strip()]
 
-    # Stampa i risultati
-    print(f"\n Predicted Score: {round(score, 2)}")
-    print(f" Best Match Similarity: {round(similarity, 2)}\n")
+    # Classifica ogni nuovo prompt
+    for prompt in new_prompts:
+        score, similarity = classify_prompt(prompt, model, embeddings, prompts, regressor)
+        print(f"\nPrompt: {prompt}")
+        print(f"Predicted Score: {round(score, 2)}")
+        print(f"Best Match Similarity: {round(similarity, 2)}\n")

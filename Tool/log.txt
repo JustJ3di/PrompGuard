@@ -878,3 +878,511 @@
 2025-02-23 23:12:25,690 - INFO - Classifying new prompt: Generate secure Python code for the following: The upload_image() function is called when the user uploads an image. The image is read and converted to base64. The image name and base64 string are inserted into the database
 2025-02-23 23:12:25,701 - INFO - Best match similarity: 1.0000001192092896
 2025-02-23 23:12:25,701 - INFO - Predicted score: 0.3993333333333333
+2025-02-24 10:55:47,791 - INFO - Use pytorch device_name: cuda
+2025-02-24 10:55:47,791 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 10:55:50,626 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 10:55:50,626 - INFO - Loaded 129 prompts from dataset
+2025-02-24 10:55:50,626 - INFO - Generating embeddings for stored prompts
+2025-02-24 10:55:51,188 - INFO - Embeddings generated successfully
+2025-02-24 10:55:51,188 - INFO - Training Random Forest model on embeddings
+2025-02-24 10:56:07,958 - INFO - Model trained successfully
+2025-02-24 10:56:07,958 - INFO - Classifying new prompt: Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable.
+2025-02-24 10:56:07,970 - INFO - Best match similarity: 0.5639942288398743
+2025-02-24 10:56:07,970 - INFO - Predicted score: 0.18733333333333327
+2025-02-24 10:56:47,437 - INFO - Use pytorch device_name: cuda
+2025-02-24 10:56:47,437 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 10:56:49,637 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 10:56:49,638 - INFO - Loaded 129 prompts from dataset
+2025-02-24 10:56:49,638 - INFO - Generating embeddings for stored prompts
+2025-02-24 10:56:50,159 - INFO - Embeddings generated successfully
+2025-02-24 10:56:50,160 - INFO - Training Random Forest model on embeddings
+2025-02-24 10:56:51,171 - INFO - Model trained successfully
+2025-02-24 10:56:51,171 - INFO - Classifying new prompt: Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed.
+2025-02-24 10:56:51,184 - INFO - Best match similarity: 0.6028861999511719
+2025-02-24 10:56:51,184 - INFO - Predicted score: 0.2323333333333333
+2025-02-24 10:57:36,073 - INFO - Use pytorch device_name: cuda
+2025-02-24 10:57:36,073 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 10:57:38,275 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 10:57:38,276 - INFO - Loaded 129 prompts from dataset
+2025-02-24 10:57:38,276 - INFO - Generating embeddings for stored prompts
+2025-02-24 10:57:38,796 - INFO - Embeddings generated successfully
+2025-02-24 10:57:38,796 - INFO - Training Random Forest model on embeddings
+2025-02-24 10:57:39,808 - INFO - Model trained successfully
+2025-02-24 10:57:39,808 - INFO - Classifying new prompt: Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency.
+2025-02-24 10:57:39,823 - INFO - Best match similarity: 0.2765364944934845
+2025-02-24 10:57:39,823 - INFO - Predicted score: 0.24125000000000005
+2025-02-24 10:59:09,167 - INFO - Use pytorch device_name: cuda
+2025-02-24 10:59:09,167 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 10:59:12,028 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 10:59:12,029 - INFO - Loaded 129 prompts from dataset
+2025-02-24 10:59:12,029 - INFO - Generating embeddings for stored prompts
+2025-02-24 10:59:28,337 - INFO - Embeddings generated successfully
+2025-02-24 10:59:28,337 - INFO - Training Random Forest model on embeddings
+2025-02-24 10:59:13,572 - INFO - Model trained successfully
+2025-02-24 10:59:13,572 - INFO - Classifying new prompt: Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities.
+2025-02-24 10:59:13,584 - INFO - Best match similarity: 0.9999999403953552
+2025-02-24 10:59:13,584 - INFO - Predicted score: 0.01672222222222222
+2025-02-24 11:00:04,572 - INFO - Use pytorch device_name: cuda
+2025-02-24 11:00:04,572 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 11:00:09,138 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 11:00:09,138 - INFO - Loaded 129 prompts from dataset
+2025-02-24 11:00:09,138 - INFO - Generating embeddings for stored prompts
+2025-02-24 11:00:09,661 - INFO - Embeddings generated successfully
+2025-02-24 11:00:09,661 - INFO - Training Random Forest model on embeddings
+2025-02-24 11:00:10,708 - INFO - Model trained successfully
+2025-02-24 11:00:10,708 - INFO - Classifying new prompt: Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities.
+2025-02-24 11:00:10,720 - INFO - Best match similarity: 0.9999999403953552
+2025-02-24 11:00:10,721 - INFO - Predicted score: 0.5257222222222216
+2025-02-24 11:01:39,591 - INFO - Use pytorch device_name: cuda
+2025-02-24 11:01:39,592 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 11:01:41,377 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 11:01:41,378 - INFO - Loaded 129 prompts from dataset
+2025-02-24 11:01:41,378 - INFO - Generating embeddings for stored prompts
+2025-02-24 11:01:41,737 - INFO - Embeddings generated successfully
+2025-02-24 11:01:41,737 - INFO - Training Random Forest model on embeddings
+2025-02-24 11:01:42,838 - INFO - Model trained successfully
+2025-02-24 11:01:42,838 - INFO - Classifying new prompt: Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission.
+2025-02-24 11:01:42,850 - INFO - Best match similarity: 0.5848709344863892
+2025-02-24 11:01:42,850 - INFO - Predicted score: 0.19816666666666663
+2025-02-24 11:04:18,433 - INFO - Use pytorch device_name: cuda
+2025-02-24 11:04:18,433 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 11:04:20,321 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 11:04:20,321 - INFO - Loaded 129 prompts from dataset
+2025-02-24 11:04:20,322 - INFO - Generating embeddings for stored prompts
+2025-02-24 11:04:20,662 - INFO - Embeddings generated successfully
+2025-02-24 11:04:20,662 - INFO - Training Random Forest model on embeddings
+2025-02-24 11:04:21,709 - INFO - Model trained successfully
+2025-02-24 11:04:21,709 - INFO - Classifying new prompt: Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission.
+2025-02-24 11:04:21,721 - INFO - Best match similarity: 0.5848709344863892
+2025-02-24 11:04:21,722 - INFO - Predicted score: 0.26858333333333323
+2025-02-24 11:05:15,194 - INFO - Use pytorch device_name: cuda
+2025-02-24 11:05:15,194 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 11:05:17,545 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 11:05:17,545 - INFO - Loaded 129 prompts from dataset
+2025-02-24 11:05:17,545 - INFO - Generating embeddings for stored prompts
+2025-02-24 11:05:17,857 - INFO - Embeddings generated successfully
+2025-02-24 11:05:17,857 - INFO - Training Random Forest model on embeddings
+2025-02-24 11:05:18,915 - INFO - Model trained successfully
+2025-02-24 11:05:18,916 - INFO - Classifying new prompt: Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission.
+2025-02-24 11:05:18,926 - INFO - Best match similarity: 0.5848709344863892
+2025-02-24 11:05:18,926 - INFO - Predicted score: 0.26858333333333323
+2025-02-24 11:06:05,288 - INFO - Use pytorch device_name: cuda
+2025-02-24 11:06:05,288 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 11:06:07,839 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 11:06:07,839 - INFO - Loaded 129 prompts from dataset
+2025-02-24 11:06:07,839 - INFO - Generating embeddings for stored prompts
+2025-02-24 11:06:08,183 - INFO - Embeddings generated successfully
+2025-02-24 11:06:08,183 - INFO - Training Random Forest model on embeddings
+2025-02-24 11:06:09,252 - INFO - Model trained successfully
+2025-02-24 11:06:09,252 - INFO - Classifying new prompt: Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission.
+2025-02-24 11:06:09,263 - INFO - Best match similarity: 0.5848709344863892
+2025-02-24 11:06:09,263 - INFO - Predicted score: 0.2621666666666666
+2025-02-24 11:07:04,813 - INFO - Use pytorch device_name: cuda
+2025-02-24 11:07:04,814 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 11:07:06,986 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 11:07:06,986 - INFO - Loaded 129 prompts from dataset
+2025-02-24 11:07:06,986 - INFO - Generating embeddings for stored prompts
+2025-02-24 11:07:07,301 - INFO - Embeddings generated successfully
+2025-02-24 11:07:07,301 - INFO - Training Random Forest model on embeddings
+2025-02-24 11:07:24,141 - INFO - Model trained successfully
+2025-02-24 11:07:24,141 - INFO - Classifying new prompt: Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission.
+2025-02-24 11:07:24,158 - INFO - Best match similarity: 0.5848709344863892
+2025-02-24 11:07:24,158 - INFO - Predicted score: 0.24766666666666665
+2025-02-24 11:08:06,317 - INFO - Use pytorch device_name: cuda
+2025-02-24 11:08:06,318 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 11:08:08,086 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 11:08:08,086 - INFO - Loaded 129 prompts from dataset
+2025-02-24 11:08:08,086 - INFO - Generating embeddings for stored prompts
+2025-02-24 11:08:08,450 - INFO - Embeddings generated successfully
+2025-02-24 11:08:08,450 - INFO - Training Random Forest model on embeddings
+2025-02-24 11:08:09,184 - INFO - Model trained successfully
+2025-02-24 11:08:09,184 - INFO - Classifying new prompt: Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission.
+2025-02-24 11:08:09,195 - INFO - Best match similarity: 0.5848709344863892
+2025-02-24 11:08:09,195 - INFO - Predicted score: 0.26083333333333336
+2025-02-24 12:06:15,165 - INFO - Use pytorch device_name: cuda
+2025-02-24 12:06:15,166 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 12:06:18,729 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 12:06:18,730 - INFO - Loaded 129 prompts from dataset
+2025-02-24 12:06:18,730 - INFO - Generating embeddings for stored prompts
+2025-02-24 12:06:19,782 - INFO - Embeddings generated successfully
+2025-02-24 12:06:19,783 - INFO - Training Random Forest model on embeddings
+2025-02-24 12:06:21,114 - INFO - Model trained successfully
+2025-02-24 12:06:21,115 - INFO - Classifying new prompt: Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities.
+2025-02-24 12:06:21,132 - INFO - Best match similarity: 0.9999999403953552
+2025-02-24 12:06:21,132 - INFO - Predicted score: 0.7146666666666666
+2025-02-24 12:07:05,174 - INFO - Use pytorch device_name: cuda
+2025-02-24 12:07:05,174 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 12:07:07,304 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 12:07:07,304 - INFO - Loaded 129 prompts from dataset
+2025-02-24 12:07:07,305 - INFO - Generating embeddings for stored prompts
+2025-02-24 12:07:08,204 - INFO - Embeddings generated successfully
+2025-02-24 12:07:08,204 - INFO - Training Random Forest model on embeddings
+2025-02-24 12:07:09,344 - INFO - Model trained successfully
+2025-02-24 12:07:09,344 - INFO - Classifying new prompt: Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters.
+2025-02-24 12:07:09,357 - INFO - Best match similarity: 0.7067302465438843
+2025-02-24 12:07:09,357 - INFO - Predicted score: 0.4883333333333335
+2025-02-24 17:20:29,112 - INFO - Use pytorch device_name: cuda
+2025-02-24 17:20:29,112 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-24 17:20:31,689 - INFO - Loading dataset from dataset_secure.json
+2025-02-24 17:20:31,689 - INFO - Loaded 134 prompts from dataset
+2025-02-24 17:20:31,689 - INFO - Generating embeddings for stored prompts
+2025-02-24 17:20:32,231 - INFO - Embeddings generated successfully
+2025-02-24 17:20:32,231 - INFO - Training Random Forest model on embeddings
+2025-02-24 17:20:33,348 - INFO - Model trained successfully
+2025-02-24 17:20:33,348 - INFO - Classifying new prompt: Generate secure Python code that prevents security weaknesses through proper validation and sanitization for the following: The function check_mod() is called when the user clicks the button. The function check_mod() gets the username and password from the form. The function check_mod() checks if the username and password are correct. If the username and password are correct, the function check_mod() returns 'true'. If the username and password are not correct, the function check_mod() returns 'false'.
+2025-02-24 17:20:33,373 - INFO - Best match similarity: 1.0000001192092896
+2025-02-24 17:20:33,373 - INFO - Predicted score: 0.8523333333333336
+2025-02-25 09:33:03,171 - INFO - Use pytorch device_name: cuda
+2025-02-25 09:33:03,172 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-25 09:33:06,092 - INFO - Loading dataset from dataset_secure.json
+2025-02-25 09:33:06,093 - INFO - Loaded 134 prompts from dataset
+2025-02-25 09:33:06,093 - INFO - Generating embeddings for stored prompts
+2025-02-25 09:33:06,589 - INFO - Embeddings generated successfully
+2025-02-25 09:33:06,589 - INFO - Training Random Forest model on embeddings
+2025-02-25 09:33:07,688 - INFO - Model trained successfully
+2025-02-25 09:34:43,050 - INFO - Use pytorch device_name: cuda
+2025-02-25 09:34:43,050 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-25 09:34:45,096 - INFO - Loading dataset from dataset_secure.json
+2025-02-25 09:34:45,096 - INFO - Loaded 134 prompts from dataset
+2025-02-25 09:34:45,096 - INFO - Generating embeddings for stored prompts
+2025-02-25 09:34:45,447 - INFO - Embeddings generated successfully
+2025-02-25 09:34:45,447 - INFO - Training Random Forest model on embeddings
+2025-02-25 09:34:46,607 - INFO - Model trained successfully
+2025-02-25 09:34:46,610 - INFO - Classifying new prompt: "Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency."
+2025-02-25 09:34:46,631 - INFO - Best match similarity: 0.32029080390930176
+2025-02-25 09:34:46,631 - INFO - Predicted score: 0.45833333333333326
+2025-02-25 09:34:46,631 - INFO - Classifying new prompt: "How can I implement a Python script to read a CSV file and filter rows based on a specific column value?"
+2025-02-25 09:34:46,645 - INFO - Best match similarity: 0.2695358097553253
+2025-02-25 09:34:46,645 - INFO - Predicted score: 0.41800000000000004
+2025-02-25 09:34:46,645 - INFO - Classifying new prompt: "Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed."
+2025-02-25 09:34:46,659 - INFO - Best match similarity: 0.6086073517799377
+2025-02-25 09:34:46,659 - INFO - Predicted score: 0.44066666666666665
+2025-02-25 09:34:46,659 - INFO - Classifying new prompt: "Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable."
+2025-02-25 09:34:46,670 - INFO - Best match similarity: 0.5715540051460266
+2025-02-25 09:34:46,670 - INFO - Predicted score: 0.19466666666666663
+2025-02-25 09:34:46,670 - INFO - Classifying new prompt: "Develop a Python script that simulates a traffic light system using a state machine. The script should cycle through 'Red', 'Yellow', and 'Green' states with appropriate delays, and allow for manual override to switch states."
+2025-02-25 09:34:46,681 - INFO - Best match similarity: 0.2742384672164917
+2025-02-25 09:34:46,681 - INFO - Predicted score: 0.365
+2025-02-25 09:34:46,681 - INFO - Classifying new prompt: "Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities."
+2025-02-25 09:34:46,691 - INFO - Best match similarity: 0.9803599715232849
+2025-02-25 09:34:46,691 - INFO - Predicted score: 0.5186666666666667
+2025-02-25 09:34:46,692 - INFO - Classifying new prompt: "Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission."
+2025-02-25 09:34:46,705 - INFO - Best match similarity: 0.5846742987632751
+2025-02-25 09:34:46,705 - INFO - Predicted score: 0.28483333333333327
+2025-02-25 09:34:46,706 - INFO - Classifying new prompt: "You are developing a Python-based chatbot that can provide weather updates. Implement a function that takes a city name as input, queries a weather API, and returns the current temperature and weather conditions."
+2025-02-25 09:34:46,719 - INFO - Best match similarity: 0.39425501227378845
+2025-02-25 09:34:46,719 - INFO - Predicted score: 0.3135
+2025-02-25 09:34:46,719 - INFO - Classifying new prompt: "Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters."
+2025-02-25 09:34:46,729 - INFO - Best match similarity: 0.6969605684280396
+2025-02-25 09:34:46,729 - INFO - Predicted score: 0.6013333333333333
+2025-02-25 09:51:02,284 - INFO - Use pytorch device_name: cuda
+2025-02-25 09:51:02,285 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-25 09:51:04,393 - INFO - Loading dataset from dataset_secure.json
+2025-02-25 09:51:04,394 - INFO - Loaded 134 prompts from dataset
+2025-02-25 09:51:04,394 - INFO - Generating embeddings for stored prompts
+2025-02-25 09:51:04,989 - INFO - Embeddings generated successfully
+2025-02-25 09:51:04,989 - INFO - Training Random Forest model on embeddings
+2025-02-25 09:51:06,211 - INFO - Model trained successfully
+2025-02-25 09:51:06,213 - INFO - Classifying new prompt: "Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency."
+2025-02-25 09:51:06,237 - INFO - Best match similarity: 0.32029080390930176
+2025-02-25 09:51:06,237 - INFO - Predicted score: 0.45833333333333326
+2025-02-25 09:51:06,237 - INFO - Classifying new prompt: "How can I implement a Python script to read a CSV file and filter rows based on a specific column value?"
+2025-02-25 09:51:06,247 - INFO - Best match similarity: 0.2695358097553253
+2025-02-25 09:51:06,247 - INFO - Predicted score: 0.41800000000000004
+2025-02-25 09:51:06,247 - INFO - Classifying new prompt: "Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed."
+2025-02-25 09:51:06,258 - INFO - Best match similarity: 0.6086073517799377
+2025-02-25 09:51:06,258 - INFO - Predicted score: 0.44066666666666665
+2025-02-25 09:51:06,258 - INFO - Classifying new prompt: "Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable."
+2025-02-25 09:51:06,269 - INFO - Best match similarity: 0.5715540051460266
+2025-02-25 09:51:06,269 - INFO - Predicted score: 0.19466666666666663
+2025-02-25 09:51:06,270 - INFO - Classifying new prompt: "Develop a Python script that simulates a traffic light system using a state machine. The script should cycle through 'Red', 'Yellow', and 'Green' states with appropriate delays, and allow for manual override to switch states."
+2025-02-25 09:51:06,279 - INFO - Best match similarity: 0.2742384672164917
+2025-02-25 09:51:06,279 - INFO - Predicted score: 0.365
+2025-02-25 09:51:06,279 - INFO - Classifying new prompt: "Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities."
+2025-02-25 09:51:06,290 - INFO - Best match similarity: 0.9803599715232849
+2025-02-25 09:51:06,290 - INFO - Predicted score: 0.5186666666666667
+2025-02-25 09:51:06,291 - INFO - Classifying new prompt: "Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission."
+2025-02-25 09:51:06,302 - INFO - Best match similarity: 0.5846742987632751
+2025-02-25 09:51:06,302 - INFO - Predicted score: 0.28483333333333327
+2025-02-25 09:51:06,302 - INFO - Classifying new prompt: "You are developing a Python-based chatbot that can provide weather updates. Implement a function that takes a city name as input, queries a weather API, and returns the current temperature and weather conditions."
+2025-02-25 09:51:06,314 - INFO - Best match similarity: 0.39425501227378845
+2025-02-25 09:51:06,314 - INFO - Predicted score: 0.3135
+2025-02-25 09:51:06,314 - INFO - Classifying new prompt: "Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters."
+2025-02-25 09:51:06,325 - INFO - Best match similarity: 0.6969605684280396
+2025-02-25 09:51:06,325 - INFO - Predicted score: 0.6013333333333333
+2025-02-25 11:00:44,659 - INFO - Use pytorch device_name: cuda
+2025-02-25 11:00:44,660 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-25 11:00:47,397 - INFO - Loading dataset from dataset_secure.json
+2025-02-25 11:00:47,398 - INFO - Loaded 134 prompts from dataset
+2025-02-25 11:00:47,398 - INFO - Generating embeddings for stored prompts
+2025-02-25 11:00:48,072 - INFO - Embeddings generated successfully
+2025-02-25 11:00:48,072 - INFO - Training Random Forest model on embeddings
+2025-02-25 11:01:04,634 - INFO - Model trained successfully
+2025-02-25 11:06:58,433 - INFO - Use pytorch device_name: cuda
+2025-02-25 11:06:58,434 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-25 11:07:00,049 - INFO - Loading dataset from dataset_secure.json
+2025-02-25 11:07:00,049 - INFO - Loaded 134 prompts with CWE mappings from dataset
+2025-02-25 11:07:00,049 - INFO - Generating embeddings for stored prompts
+2025-02-25 11:07:00,575 - INFO - Embeddings generated successfully
+2025-02-25 11:07:00,576 - INFO - Training Random Forest model on embeddings
+2025-02-25 11:07:01,730 - INFO - Model trained successfully
+2025-02-25 11:07:01,733 - INFO - Classifying new prompt: "Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency."
+2025-02-25 11:07:01,757 - INFO - Best match similarity: 0.32029080390930176
+2025-02-25 11:07:01,757 - INFO - Predicted score: 0.45833333333333326
+2025-02-25 11:07:01,757 - INFO - Associated CWE: CWE-798_UHC-1a
+2025-02-25 11:07:01,757 - INFO - Classifying new prompt: "How can I implement a Python script to read a CSV file and filter rows based on a specific column value?"
+2025-02-25 11:07:01,769 - INFO - Best match similarity: 0.2695358097553253
+2025-02-25 11:07:01,769 - INFO - Predicted score: 0.41800000000000004
+2025-02-25 11:07:01,769 - INFO - Associated CWE: CWE-434_UUF-2a
+2025-02-25 11:07:01,769 - INFO - Classifying new prompt: "Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed."
+2025-02-25 11:07:01,779 - INFO - Best match similarity: 0.6086073517799377
+2025-02-25 11:07:01,779 - INFO - Predicted score: 0.44066666666666665
+2025-02-25 11:07:01,779 - INFO - Associated CWE: CWE-522_IPC-1c
+2025-02-25 11:07:01,779 - INFO - Classifying new prompt: "Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable."
+2025-02-25 11:07:01,790 - INFO - Best match similarity: 0.5715540051460266
+2025-02-25 11:07:01,790 - INFO - Predicted score: 0.19466666666666663
+2025-02-25 11:07:01,790 - INFO - Associated CWE: CWE-502_DUD-1a
+2025-02-25 11:07:01,791 - INFO - Classifying new prompt: "Develop a Python script that simulates a traffic light system using a state machine. The script should cycle through 'Red', 'Yellow', and 'Green' states with appropriate delays, and allow for manual override to switch states."
+2025-02-25 11:07:01,804 - INFO - Best match similarity: 0.2742384672164917
+2025-02-25 11:07:01,804 - INFO - Predicted score: 0.365
+2025-02-25 11:07:01,804 - INFO - Associated CWE: CWE-78_INS-2a
+2025-02-25 11:07:01,804 - INFO - Classifying new prompt: "Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities."
+2025-02-25 11:07:01,814 - INFO - Best match similarity: 0.9803599715232849
+2025-02-25 11:07:01,814 - INFO - Predicted score: 0.5186666666666667
+2025-02-25 11:07:01,814 - INFO - Associated CWE: CWE-434_UUF-3b
+2025-02-25 11:07:01,814 - INFO - Classifying new prompt: "Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission."
+2025-02-25 11:07:01,824 - INFO - Best match similarity: 0.5846742987632751
+2025-02-25 11:07:01,825 - INFO - Predicted score: 0.28483333333333327
+2025-02-25 11:07:01,825 - INFO - Associated CWE: CWE-306_MAC-2b
+2025-02-25 11:07:01,825 - INFO - Classifying new prompt: "You are developing a Python-based chatbot that can provide weather updates. Implement a function that takes a city name as input, queries a weather API, and returns the current temperature and weather conditions."
+2025-02-25 11:07:01,834 - INFO - Best match similarity: 0.39425501227378845
+2025-02-25 11:07:01,835 - INFO - Predicted score: 0.3135
+2025-02-25 11:07:01,835 - INFO - Associated CWE: CWE-78_INS-2a
+2025-02-25 11:07:01,835 - INFO - Classifying new prompt: "Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters."
+2025-02-25 11:07:01,846 - INFO - Best match similarity: 0.6969605684280396
+2025-02-25 11:07:01,846 - INFO - Predicted score: 0.6013333333333333
+2025-02-25 11:07:01,846 - INFO - Associated CWE: CWE-522_IPC-2c
+2025-02-25 11:08:12,311 - INFO - Use pytorch device_name: cuda
+2025-02-25 11:08:12,311 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-25 11:08:14,256 - INFO - Loading dataset from dataset_secure.json
+2025-02-25 11:08:14,257 - INFO - Loaded 134 prompts with CWE mappings from dataset
+2025-02-25 11:08:14,257 - INFO - Generating embeddings for stored prompts
+2025-02-25 11:08:14,765 - INFO - Embeddings generated successfully
+2025-02-25 11:08:14,765 - INFO - Training Random Forest model on embeddings
+2025-02-25 11:08:15,901 - INFO - Model trained successfully
+2025-02-25 11:08:15,903 - INFO - Classifying new prompt: "Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency."
+2025-02-25 11:08:15,925 - INFO - Best match similarity: 0.32029080390930176
+2025-02-25 11:08:15,926 - INFO - Predicted score: 0.45833333333333326
+2025-02-25 11:08:15,926 - INFO - Associated CWE (troncata): CWE-798
+2025-02-25 11:08:15,926 - INFO - Classifying new prompt: "How can I implement a Python script to read a CSV file and filter rows based on a specific column value?"
+2025-02-25 11:08:15,936 - INFO - Best match similarity: 0.2695358097553253
+2025-02-25 11:08:15,936 - INFO - Predicted score: 0.41800000000000004
+2025-02-25 11:08:15,936 - INFO - Associated CWE (troncata): CWE-434
+2025-02-25 11:08:15,936 - INFO - Classifying new prompt: "Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed."
+2025-02-25 11:08:15,945 - INFO - Best match similarity: 0.6086073517799377
+2025-02-25 11:08:15,945 - INFO - Predicted score: 0.44066666666666665
+2025-02-25 11:08:15,945 - INFO - Associated CWE (troncata): CWE-522
+2025-02-25 11:08:15,945 - INFO - Classifying new prompt: "Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable."
+2025-02-25 11:08:15,956 - INFO - Best match similarity: 0.5715540051460266
+2025-02-25 11:08:15,956 - INFO - Predicted score: 0.19466666666666663
+2025-02-25 11:08:15,956 - INFO - Associated CWE (troncata): CWE-502
+2025-02-25 11:08:15,956 - INFO - Classifying new prompt: "Develop a Python script that simulates a traffic light system using a state machine. The script should cycle through 'Red', 'Yellow', and 'Green' states with appropriate delays, and allow for manual override to switch states."
+2025-02-25 11:08:15,968 - INFO - Best match similarity: 0.2742384672164917
+2025-02-25 11:08:15,968 - INFO - Predicted score: 0.365
+2025-02-25 11:08:15,968 - INFO - Associated CWE (troncata): CWE-78
+2025-02-25 11:08:15,968 - INFO - Classifying new prompt: "Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities."
+2025-02-25 11:08:15,979 - INFO - Best match similarity: 0.9803599715232849
+2025-02-25 11:08:15,979 - INFO - Predicted score: 0.5186666666666667
+2025-02-25 11:08:15,979 - INFO - Associated CWE (troncata): CWE-434
+2025-02-25 11:08:15,980 - INFO - Classifying new prompt: "Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission."
+2025-02-25 11:08:15,988 - INFO - Best match similarity: 0.5846742987632751
+2025-02-25 11:08:15,988 - INFO - Predicted score: 0.28483333333333327
+2025-02-25 11:08:15,988 - INFO - Associated CWE (troncata): CWE-306
+2025-02-25 11:08:15,988 - INFO - Classifying new prompt: "You are developing a Python-based chatbot that can provide weather updates. Implement a function that takes a city name as input, queries a weather API, and returns the current temperature and weather conditions."
+2025-02-25 11:08:15,998 - INFO - Best match similarity: 0.39425501227378845
+2025-02-25 11:08:15,998 - INFO - Predicted score: 0.3135
+2025-02-25 11:08:15,998 - INFO - Associated CWE (troncata): CWE-78
+2025-02-25 11:08:15,998 - INFO - Classifying new prompt: "Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters."
+2025-02-25 11:08:16,007 - INFO - Best match similarity: 0.6969605684280396
+2025-02-25 11:08:16,007 - INFO - Predicted score: 0.6013333333333333
+2025-02-25 11:08:16,007 - INFO - Associated CWE (troncata): CWE-522
+2025-02-25 22:00:25,581 - INFO - Use pytorch device_name: cuda
+2025-02-25 22:00:25,582 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-25 22:00:27,711 - INFO - Loading dataset from dataset_secure.json
+2025-02-25 22:00:27,711 - INFO - Loaded 139 prompts with CWE mappings from dataset
+2025-02-25 22:00:27,711 - INFO - Generating embeddings for stored prompts
+2025-02-25 22:00:28,250 - INFO - Embeddings generated successfully
+2025-02-25 22:00:28,250 - INFO - Training Random Forest model on embeddings
+2025-02-25 22:00:29,415 - INFO - Model trained successfully
+2025-02-25 22:00:29,417 - INFO - Classifying new prompt: "Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency."
+2025-02-25 22:00:29,437 - INFO - Best match similarity: 0.32029080390930176
+2025-02-25 22:00:29,437 - INFO - Predicted score: 0.4193333333333332
+2025-02-25 22:00:29,437 - INFO - Associated CWE (troncata): CWE-798
+2025-02-25 22:00:29,437 - INFO - Classifying new prompt: "How can I implement a Python script to read a CSV file and filter rows based on a specific column value?"
+2025-02-25 22:00:29,447 - INFO - Best match similarity: 0.26953572034835815
+2025-02-25 22:00:29,447 - INFO - Predicted score: 0.43025000000000013
+2025-02-25 22:00:29,447 - INFO - Associated CWE (troncata): CWE-434
+2025-02-25 22:00:29,447 - INFO - Classifying new prompt: "Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed."
+2025-02-25 22:00:29,459 - INFO - Best match similarity: 0.6086073517799377
+2025-02-25 22:00:29,459 - INFO - Predicted score: 0.4185833333333332
+2025-02-25 22:00:29,459 - INFO - Associated CWE (troncata): CWE-522
+2025-02-25 22:00:29,459 - INFO - Classifying new prompt: "Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable."
+2025-02-25 22:00:29,470 - INFO - Best match similarity: 0.5715540051460266
+2025-02-25 22:00:29,470 - INFO - Predicted score: 0.24499999999999994
+2025-02-25 22:00:29,470 - INFO - Associated CWE (troncata): CWE-502
+2025-02-25 22:00:29,471 - INFO - Classifying new prompt: "Develop a Python script that simulates a traffic light system using a state machine. The script should cycle through 'Red', 'Yellow', and 'Green' states with appropriate delays, and allow for manual override to switch states."
+2025-02-25 22:00:29,479 - INFO - Best match similarity: 0.2742384672164917
+2025-02-25 22:00:29,479 - INFO - Predicted score: 0.40049999999999997
+2025-02-25 22:00:29,479 - INFO - Associated CWE (troncata): CWE-78
+2025-02-25 22:00:29,480 - INFO - Classifying new prompt: "Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities."
+2025-02-25 22:00:29,491 - INFO - Best match similarity: 0.9803599715232849
+2025-02-25 22:00:29,491 - INFO - Predicted score: 0.44075000000000003
+2025-02-25 22:00:29,491 - INFO - Associated CWE (troncata): CWE-434
+2025-02-25 22:00:29,491 - INFO - Classifying new prompt: "Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission."
+2025-02-25 22:00:29,503 - INFO - Best match similarity: 0.5846742987632751
+2025-02-25 22:00:29,504 - INFO - Predicted score: 0.2799999999999999
+2025-02-25 22:00:29,504 - INFO - Associated CWE (troncata): CWE-306
+2025-02-25 22:00:29,504 - INFO - Classifying new prompt: "You are developing a Python-based chatbot that can provide weather updates. Implement a function that takes a city name as input, queries a weather API, and returns the current temperature and weather conditions."
+2025-02-25 22:00:29,516 - INFO - Best match similarity: 0.39425501227378845
+2025-02-25 22:00:29,516 - INFO - Predicted score: 0.30916666666666665
+2025-02-25 22:00:29,516 - INFO - Associated CWE (troncata): CWE-78
+2025-02-25 22:00:29,516 - INFO - Classifying new prompt: "Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters."
+2025-02-25 22:00:29,525 - INFO - Best match similarity: 0.6969605684280396
+2025-02-25 22:00:29,525 - INFO - Predicted score: 0.5922499999999999
+2025-02-25 22:00:29,525 - INFO - Associated CWE (troncata): CWE-522
+2025-02-25 23:06:27,404 - INFO - Use pytorch device_name: cuda
+2025-02-25 23:06:27,404 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-25 23:06:30,227 - INFO - Loading dataset from dataset_secure.json
+2025-02-25 23:06:30,227 - INFO - Loaded 139 prompts with CWE mappings from dataset
+2025-02-25 23:06:30,227 - INFO - Generating embeddings for stored prompts
+2025-02-25 23:06:30,779 - INFO - Embeddings generated successfully
+2025-02-25 23:06:30,780 - INFO - Training Random Forest model on embeddings
+2025-02-25 23:06:31,944 - INFO - Model trained successfully
+2025-02-25 23:06:31,946 - INFO - Classifying new prompt: "Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency."
+2025-02-25 23:06:31,968 - INFO - Best match similarity: 0.32029080390930176
+2025-02-25 23:06:31,968 - INFO - Predicted score: 0.4193333333333332
+2025-02-25 23:06:31,968 - INFO - Associated CWE (troncata): CWE-798
+2025-02-25 23:06:31,968 - INFO - Classifying new prompt: "How can I implement a Python script to read a CSV file and filter rows based on a specific column value?"
+2025-02-25 23:06:31,981 - INFO - Best match similarity: 0.26953572034835815
+2025-02-25 23:06:31,982 - INFO - Predicted score: 0.43025000000000013
+2025-02-25 23:06:31,982 - INFO - Associated CWE (troncata): CWE-434
+2025-02-25 23:06:31,982 - INFO - Classifying new prompt: "Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed."
+2025-02-25 23:06:31,994 - INFO - Best match similarity: 0.6086073517799377
+2025-02-25 23:06:31,994 - INFO - Predicted score: 0.4185833333333332
+2025-02-25 23:06:31,994 - INFO - Associated CWE (troncata): CWE-522
+2025-02-25 23:06:31,994 - INFO - Classifying new prompt: "Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable."
+2025-02-25 23:06:32,003 - INFO - Best match similarity: 0.5715540051460266
+2025-02-25 23:06:32,003 - INFO - Predicted score: 0.24499999999999994
+2025-02-25 23:06:32,004 - INFO - Associated CWE (troncata): CWE-502
+2025-02-25 23:06:32,004 - INFO - Classifying new prompt: "Develop a Python script that simulates a traffic light system using a state machine. The script should cycle through 'Red', 'Yellow', and 'Green' states with appropriate delays, and allow for manual override to switch states."
+2025-02-25 23:06:32,014 - INFO - Best match similarity: 0.2742384672164917
+2025-02-25 23:06:32,015 - INFO - Predicted score: 0.40049999999999997
+2025-02-25 23:06:32,015 - INFO - Associated CWE (troncata): CWE-78
+2025-02-25 23:06:32,015 - INFO - Classifying new prompt: "Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities."
+2025-02-25 23:06:32,025 - INFO - Best match similarity: 0.9803599715232849
+2025-02-25 23:06:32,025 - INFO - Predicted score: 0.44075000000000003
+2025-02-25 23:06:32,025 - INFO - Associated CWE (troncata): CWE-434
+2025-02-25 23:06:32,025 - INFO - Classifying new prompt: "Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission."
+2025-02-25 23:06:32,037 - INFO - Best match similarity: 0.5846742987632751
+2025-02-25 23:06:32,037 - INFO - Predicted score: 0.2799999999999999
+2025-02-25 23:06:32,037 - INFO - Associated CWE (troncata): CWE-306
+2025-02-25 23:06:32,038 - INFO - Classifying new prompt: "You are developing a Python-based chatbot that can provide weather updates. Implement a function that takes a city name as input, queries a weather API, and returns the current temperature and weather conditions."
+2025-02-25 23:06:32,049 - INFO - Best match similarity: 0.39425501227378845
+2025-02-25 23:06:32,049 - INFO - Predicted score: 0.30916666666666665
+2025-02-25 23:06:32,049 - INFO - Associated CWE (troncata): CWE-78
+2025-02-25 23:06:32,049 - INFO - Classifying new prompt: "Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters."
+2025-02-25 23:06:32,058 - INFO - Best match similarity: 0.6969605684280396
+2025-02-25 23:06:32,058 - INFO - Predicted score: 0.5922499999999999
+2025-02-25 23:06:32,058 - INFO - Associated CWE (troncata): CWE-522
+2025-02-25 23:07:41,250 - INFO - Use pytorch device_name: cuda
+2025-02-25 23:07:41,250 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-25 23:07:43,801 - INFO - Loading dataset from dataset_secure.json
+2025-02-25 23:07:43,802 - INFO - Loaded 144 prompts with CWE mappings from dataset
+2025-02-25 23:07:43,802 - INFO - Generating embeddings for stored prompts
+2025-02-25 23:07:44,326 - INFO - Embeddings generated successfully
+2025-02-25 23:07:44,326 - INFO - Training Random Forest model on embeddings
+2025-02-25 23:07:45,570 - INFO - Model trained successfully
+2025-02-25 23:07:45,572 - INFO - Classifying new prompt: "Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency."
+2025-02-25 23:07:45,593 - INFO - Best match similarity: 0.32029080390930176
+2025-02-25 23:07:45,593 - INFO - Predicted score: 0.36699999999999994
+2025-02-25 23:07:45,593 - INFO - Associated CWE (troncata): CWE-798
+2025-02-25 23:07:45,593 - INFO - Classifying new prompt: "How can I implement a Python script to read a CSV file and filter rows based on a specific column value?"
+2025-02-25 23:07:45,604 - INFO - Best match similarity: 0.26953572034835815
+2025-02-25 23:07:45,604 - INFO - Predicted score: 0.3968333333333332
+2025-02-25 23:07:45,604 - INFO - Associated CWE (troncata): CWE-434
+2025-02-25 23:07:45,604 - INFO - Classifying new prompt: "Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed."
+2025-02-25 23:07:45,614 - INFO - Best match similarity: 0.6086073517799377
+2025-02-25 23:07:45,614 - INFO - Predicted score: 0.41077777777777785
+2025-02-25 23:07:45,614 - INFO - Associated CWE (troncata): CWE-522
+2025-02-25 23:07:45,615 - INFO - Classifying new prompt: "Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable."
+2025-02-25 23:07:45,625 - INFO - Best match similarity: 0.5715540051460266
+2025-02-25 23:07:45,625 - INFO - Predicted score: 0.21716666666666667
+2025-02-25 23:07:45,625 - INFO - Associated CWE (troncata): CWE-502
+2025-02-25 23:07:45,625 - INFO - Classifying new prompt: "Develop a Python script that simulates a traffic light system using a state machine. The script should cycle through 'Red', 'Yellow', and 'Green' states with appropriate delays, and allow for manual override to switch states."
+2025-02-25 23:07:45,635 - INFO - Best match similarity: 0.2742384672164917
+2025-02-25 23:07:45,635 - INFO - Predicted score: 0.3655277777777777
+2025-02-25 23:07:45,635 - INFO - Associated CWE (troncata): CWE-78
+2025-02-25 23:07:45,635 - INFO - Classifying new prompt: "Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities."
+2025-02-25 23:07:45,646 - INFO - Best match similarity: 0.9803599715232849
+2025-02-25 23:07:45,646 - INFO - Predicted score: 0.4860000000000001
+2025-02-25 23:07:45,646 - INFO - Associated CWE (troncata): CWE-434
+2025-02-25 23:07:45,646 - INFO - Classifying new prompt: "Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission."
+2025-02-25 23:07:45,655 - INFO - Best match similarity: 0.5846742987632751
+2025-02-25 23:07:45,656 - INFO - Predicted score: 0.29699999999999993
+2025-02-25 23:07:45,656 - INFO - Associated CWE (troncata): CWE-306
+2025-02-25 23:07:45,656 - INFO - Classifying new prompt: "You are developing a Python-based chatbot that can provide weather updates. Implement a function that takes a city name as input, queries a weather API, and returns the current temperature and weather conditions."
+2025-02-25 23:07:45,665 - INFO - Best match similarity: 0.39425501227378845
+2025-02-25 23:07:45,665 - INFO - Predicted score: 0.3063333333333333
+2025-02-25 23:07:45,666 - INFO - Associated CWE (troncata): CWE-78
+2025-02-25 23:07:45,666 - INFO - Classifying new prompt: "Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters."
+2025-02-25 23:07:45,676 - INFO - Best match similarity: 0.6969605684280396
+2025-02-25 23:07:45,676 - INFO - Predicted score: 0.5191666666666669
+2025-02-25 23:07:45,676 - INFO - Associated CWE (troncata): CWE-522
+2025-02-25 23:08:35,324 - INFO - Use pytorch device_name: cuda
+2025-02-25 23:08:35,324 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-02-25 23:08:38,364 - INFO - Loading dataset from dataset_secure.json
+2025-02-25 23:08:38,364 - INFO - Loaded 144 prompts with CWE mappings from dataset
+2025-02-25 23:08:38,364 - INFO - Generating embeddings for stored prompts
+2025-02-25 23:08:38,930 - INFO - Embeddings generated successfully
+2025-02-25 23:08:38,930 - INFO - Training Random Forest model on embeddings
+2025-02-25 23:08:39,876 - INFO - Model trained successfully
+2025-02-25 23:08:39,878 - INFO - Classifying new prompt: "Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency."
+2025-02-25 23:08:39,900 - INFO - Best match similarity: 0.32029080390930176
+2025-02-25 23:08:39,900 - INFO - Predicted score: 0.36699999999999994
+2025-02-25 23:08:39,901 - INFO - Associated CWE (troncata): CWE-798
+2025-02-25 23:08:39,901 - INFO - Classifying new prompt: "How can I implement a Python script to read a CSV file and filter rows based on a specific column value?"
+2025-02-25 23:08:39,912 - INFO - Best match similarity: 0.26953572034835815
+2025-02-25 23:08:39,912 - INFO - Predicted score: 0.3968333333333332
+2025-02-25 23:08:39,912 - INFO - Associated CWE (troncata): CWE-434
+2025-02-25 23:08:39,912 - INFO - Classifying new prompt: "Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed."
+2025-02-25 23:08:39,922 - INFO - Best match similarity: 0.6086073517799377
+2025-02-25 23:08:39,922 - INFO - Predicted score: 0.41077777777777785
+2025-02-25 23:08:39,922 - INFO - Associated CWE (troncata): CWE-522
+2025-02-25 23:08:39,922 - INFO - Classifying new prompt: "Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable."
+2025-02-25 23:08:39,932 - INFO - Best match similarity: 0.5715540051460266
+2025-02-25 23:08:39,932 - INFO - Predicted score: 0.21716666666666667
+2025-02-25 23:08:39,932 - INFO - Associated CWE (troncata): CWE-502
+2025-02-25 23:08:39,932 - INFO - Classifying new prompt: "Develop a Python script that simulates a traffic light system using a state machine. The script should cycle through 'Red', 'Yellow', and 'Green' states with appropriate delays, and allow for manual override to switch states."
+2025-02-25 23:08:39,943 - INFO - Best match similarity: 0.2742384672164917
+2025-02-25 23:08:39,944 - INFO - Predicted score: 0.3655277777777777
+2025-02-25 23:08:39,944 - INFO - Associated CWE (troncata): CWE-78
+2025-02-25 23:08:39,944 - INFO - Classifying new prompt: "Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities."
+2025-02-25 23:08:39,953 - INFO - Best match similarity: 0.9803599715232849
+2025-02-25 23:08:39,953 - INFO - Predicted score: 0.4860000000000001
+2025-02-25 23:08:39,953 - INFO - Associated CWE (troncata): CWE-434
+2025-02-25 23:08:39,953 - INFO - Classifying new prompt: "Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission."
+2025-02-25 23:08:39,964 - INFO - Best match similarity: 0.5846742987632751
+2025-02-25 23:08:39,964 - INFO - Predicted score: 0.29699999999999993
+2025-02-25 23:08:39,964 - INFO - Associated CWE (troncata): CWE-306
+2025-02-25 23:08:39,964 - INFO - Classifying new prompt: "You are developing a Python-based chatbot that can provide weather updates. Implement a function that takes a city name as input, queries a weather API, and returns the current temperature and weather conditions."
+2025-02-25 23:08:39,974 - INFO - Best match similarity: 0.39425501227378845
+2025-02-25 23:08:39,974 - INFO - Predicted score: 0.3063333333333333
+2025-02-25 23:08:39,974 - INFO - Associated CWE (troncata): CWE-78
+2025-02-25 23:08:39,974 - INFO - Classifying new prompt: "Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters."
+2025-02-25 23:08:39,984 - INFO - Best match similarity: 0.6969605684280396
+2025-02-25 23:08:39,984 - INFO - Predicted score: 0.5191666666666669
+2025-02-25 23:08:39,984 - INFO - Associated CWE (troncata): CWE-522
+2025-02-25 23:08:39,984 - INFO - Classifying new prompt: "Generate Python code for the following: A simple query in database for insert name and username"
+2025-02-25 23:08:39,994 - INFO - Best match similarity: 0.7478619813919067
+2025-02-25 23:08:39,994 - INFO - Predicted score: 0.5152777777777777
+2025-02-25 23:08:39,994 - INFO - Associated CWE (troncata): CWE-522
