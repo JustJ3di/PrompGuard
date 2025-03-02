@@ -1,0 +1,15 @@
+Versione 1 utilizza il modello "paraphrase-mpnet-base-v2" della libreria SentenceTransformer. Il flusso (caricamento dataset, generazione degli embeddings, training e classificazione) rimane invariato; viene soltanto modificato il modello usato per il calcolo degli embeddings.
+
+Versione 2 utilizza .
+Generazione di testo:
+Utilizza il modello open-source "tiiuae/falcon-7b-instruct" tramite il pipeline di transformers per generare una chat completion (in questo esempio, un haiku su AI).
+
+Calcolo degli embeddings:
+Usa il modello "sentence-transformers/all-MiniLM-L6-v2" per generare embeddings dai prompt.
+
+Classificazione:
+Calcola la similarità coseno tra il nuovo prompt e quelli del dataset, utilizza un modello RandomForest per prevedere uno score e restituisce la CWE associata (troncata eliminando il suffisso dopo l'underscore).
+
+versione3:
+Il modello per la generazione del testo è stato sostituito con "distilgpt2", un modello molto più leggero rispetto a Falcon-7B, mantenendo comunque la funzionalità di generare una chat completion (ad es. un haiku su AI).
+Il resto del flusso (caricamento del dataset, generazione degli embeddings, addestramento del modello di regressione e classificazione) resta invariato.
