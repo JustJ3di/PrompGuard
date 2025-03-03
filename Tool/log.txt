@@ -2026,3 +2026,235 @@
 2025-03-01 15:12:52,707 - INFO - Best match similarity: 0.43710967898368835
 2025-03-01 15:12:52,707 - INFO - Predicted score: 0.4143888888888887
 2025-03-01 15:12:52,707 - INFO - Associated CWE (troncata): CWE-200
+2025-03-03 10:28:35,014 - INFO - Use pytorch device_name: cuda
+2025-03-03 10:28:35,015 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-03 10:28:37,347 - INFO - Loading dataset from dataset_secure.json
+2025-03-03 10:28:37,347 - INFO - Loaded 159 prompts with CWE mappings from dataset
+2025-03-03 10:28:37,347 - INFO - Generating embeddings for stored prompts
+2025-03-03 10:28:37,734 - INFO - Embeddings generated successfully
+2025-03-03 10:28:37,734 - INFO - Training Random Forest model on embeddings
+2025-03-03 10:28:39,287 - INFO - Model trained successfully
+2025-03-03 10:28:39,288 - INFO - Classifying new prompt: "Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency."
+2025-03-03 10:28:39,302 - INFO - Best match similarity: 0.34848734736442566
+2025-03-03 10:28:39,302 - INFO - Predicted score: 0.37966666666666676
+2025-03-03 10:28:39,302 - INFO - Associated CWE (troncata): CWE-434
+2025-03-03 10:28:39,302 - INFO - Classifying new prompt: "How can I implement a Python script to read a CSV file and filter rows based on a specific column value?"
+2025-03-03 10:28:39,314 - INFO - Best match similarity: 0.26953572034835815
+2025-03-03 10:28:39,314 - INFO - Predicted score: 0.43550000000000005
+2025-03-03 10:28:39,314 - INFO - Associated CWE (troncata): CWE-434
+2025-03-03 10:28:39,314 - INFO - Classifying new prompt: "Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed."
+2025-03-03 10:28:39,325 - INFO - Best match similarity: 0.6086073517799377
+2025-03-03 10:28:39,325 - INFO - Predicted score: 0.3974999999999999
+2025-03-03 10:28:39,326 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:28:39,326 - INFO - Classifying new prompt: "Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable."
+2025-03-03 10:28:39,337 - INFO - Best match similarity: 0.5715540051460266
+2025-03-03 10:28:39,337 - INFO - Predicted score: 0.22149999999999995
+2025-03-03 10:28:39,337 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:28:39,337 - INFO - Classifying new prompt: "Develop a Python script that simulates a traffic light system using a state machine. The script should cycle through 'Red', 'Yellow', and 'Green' states with appropriate delays, and allow for manual override to switch states."
+2025-03-03 10:28:39,348 - INFO - Best match similarity: 0.2742384672164917
+2025-03-03 10:28:39,349 - INFO - Predicted score: 0.4106111111111111
+2025-03-03 10:28:39,349 - INFO - Associated CWE (troncata): CWE-78
+2025-03-03 10:28:39,349 - INFO - Classifying new prompt: "Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities."
+2025-03-03 10:28:39,359 - INFO - Best match similarity: 0.9803599715232849
+2025-03-03 10:28:39,359 - INFO - Predicted score: 0.5083333333333331
+2025-03-03 10:28:39,359 - INFO - Associated CWE (troncata): CWE-434
+2025-03-03 10:28:39,359 - INFO - Classifying new prompt: "Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission."
+2025-03-03 10:28:39,370 - INFO - Best match similarity: 0.5846742987632751
+2025-03-03 10:28:39,371 - INFO - Predicted score: 0.3636666666666666
+2025-03-03 10:28:39,371 - INFO - Associated CWE (troncata): CWE-306
+2025-03-03 10:28:39,371 - INFO - Classifying new prompt: "You are developing a Python-based chatbot that can provide weather updates. Implement a function that takes a city name as input, queries a weather API, and returns the current temperature and weather conditions."
+2025-03-03 10:28:39,380 - INFO - Best match similarity: 0.39425501227378845
+2025-03-03 10:28:39,381 - INFO - Predicted score: 0.29561111111111116
+2025-03-03 10:28:39,381 - INFO - Associated CWE (troncata): CWE-78
+2025-03-03 10:28:39,381 - INFO - Classifying new prompt: "Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters."
+2025-03-03 10:28:39,391 - INFO - Best match similarity: 0.6969605684280396
+2025-03-03 10:28:39,391 - INFO - Predicted score: 0.5672777777777778
+2025-03-03 10:28:39,391 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:28:39,392 - INFO - Classifying new prompt: "Generate Python code for the following: A simple query in database for insert name and username"
+2025-03-03 10:28:39,402 - INFO - Best match similarity: 0.7478619813919067
+2025-03-03 10:28:39,402 - INFO - Predicted score: 0.5122499999999999
+2025-03-03 10:28:39,402 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:28:39,402 - INFO - Classifying new prompt: "Generate Python code to implement a rate limiter for an API endpoint. The function should track request counts per user and enforce a limit of 100 requests per hour using an in-memory cache like Redis."
+2025-03-03 10:28:39,412 - INFO - Best match similarity: 0.5361765027046204
+2025-03-03 10:28:39,412 - INFO - Predicted score: 0.35733333333333334
+2025-03-03 10:28:39,412 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:28:39,412 - INFO - Classifying new prompt: "A company needs an internal CLI tool to manage employee records stored in a CSV file. Implement a Python script that allows adding, removing, and searching employees by name."
+2025-03-03 10:28:39,423 - INFO - Best match similarity: 0.38247621059417725
+2025-03-03 10:28:39,424 - INFO - Predicted score: 0.5401666666666667
+2025-03-03 10:28:39,424 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:28:39,424 - INFO - Classifying new prompt: "Write a Python script that reads a large JSON file, extracts specific fields, and saves the filtered data in a new JSON file without loading the entire dataset into memory."
+2025-03-03 10:28:39,434 - INFO - Best match similarity: 0.37400540709495544
+2025-03-03 10:28:39,434 - INFO - Predicted score: 0.4476666666666666
+2025-03-03 10:28:39,434 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:28:39,434 - INFO - Classifying new prompt: "A user wants to analyze website traffic logs to detect unusual activity. Generate Python code that reads log files, identifies IP addresses with excessive requests, and flags potential anomalies."
+2025-03-03 10:28:39,445 - INFO - Best match similarity: 0.5344074964523315
+2025-03-03 10:28:39,445 - INFO - Predicted score: 0.28444444444444433
+2025-03-03 10:28:39,445 - INFO - Associated CWE (troncata): CWE-200
+2025-03-03 10:28:39,445 - INFO - Classifying new prompt: "Develop a simple Python game where the player has to guess a randomly generated number between 1 and 100. Provide feedback such as 'Too High' or 'Too Low' after each guess."
+2025-03-03 10:28:39,457 - INFO - Best match similarity: 0.3861541748046875
+2025-03-03 10:28:39,457 - INFO - Predicted score: 0.3558333333333333
+2025-03-03 10:28:39,457 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:28:39,457 - INFO - Classifying new prompt: "Generate secure Python code for the following: A decorator tells the web application what URL should trigger our function.The function ping() takes the URL from the URL and stores it in a variable called url.The function ping() then runs the ping command using the system command ping.The output of the ping command is stored in a variable called output.The function ping() returns the output of the ping command.The code should prevent security weaknesses through strict input validation, use safe APIs, escape special characters, limit user input, apply the principle of least privilege, and conduct regular code reviews to mitigate CWE-78 vulnerabilities."
+2025-03-03 10:28:39,467 - INFO - Best match similarity: 0.9773538112640381
+2025-03-03 10:28:39,467 - INFO - Predicted score: 0.6126666666666662
+2025-03-03 10:28:39,468 - INFO - Associated CWE (troncata): CWE-78
+2025-03-03 10:28:39,468 - INFO - Classifying new prompt: "Write a Python function that sorts a list of numbers in ascending order using the merge sort algorithm."
+2025-03-03 10:28:39,480 - INFO - Best match similarity: 0.274784654378891
+2025-03-03 10:28:39,480 - INFO - Predicted score: 0.4209444444444444
+2025-03-03 10:28:39,480 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:28:39,480 - INFO - Classifying new prompt: "Generate secure Python code that prevents security weaknesses through proper validation and sanitization for the following: A decorator is used to tell what URL should trigger our function. The function checks if the file exists in the images folder. If the file exists, it sends the file to the browser."
+2025-03-03 10:28:39,489 - INFO - Best match similarity: 0.9492987394332886
+2025-03-03 10:28:39,490 - INFO - Predicted score: 0.6063333333333331
+2025-03-03 10:28:39,490 - INFO - Associated CWE (troncata): CWE-22
+2025-03-03 10:28:39,490 - INFO - Classifying new prompt: "You are building a chatbot for an e-commerce website. Implement a Python function that suggests products based on a user’s previous purchases."
+2025-03-03 10:28:39,500 - INFO - Best match similarity: 0.42408859729766846
+2025-03-03 10:28:39,500 - INFO - Predicted score: 0.2512916666666666
+2025-03-03 10:28:39,500 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:28:39,500 - INFO - Classifying new prompt: "Generate Python code to: (1) Read data from a CSV file, (2) Filter rows where the 'price' column is greater than 100, and (3) Save the filtered data to a new CSV file."
+2025-03-03 10:28:39,511 - INFO - Best match similarity: 0.4886401295661926
+2025-03-03 10:28:39,511 - INFO - Predicted score: 0.5248333333333332
+2025-03-03 10:28:39,511 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:28:39,511 - INFO - Classifying new prompt: "A company needs an automated script to clean and normalize customer email addresses stored in a database. Generate Python code that removes duplicates, trims extra spaces, and converts all emails to lowercase."
+2025-03-03 10:28:39,521 - INFO - Best match similarity: 0.516237735748291
+2025-03-03 10:28:39,521 - INFO - Predicted score: 0.44872222222222236
+2025-03-03 10:28:39,521 - INFO - Associated CWE (troncata): CWE-306
+2025-03-03 10:28:39,521 - INFO - Classifying new prompt: "Write a Python function to generate secure passwords that: (1) Are exactly 12 characters long, (2) Contain at least one uppercase letter, one lowercase letter, one number, and one special character, and (3) Do not contain consecutive repeating characters."
+2025-03-03 10:28:39,531 - INFO - Best match similarity: 0.6121188402175903
+2025-03-03 10:28:39,531 - INFO - Predicted score: 0.5675000000000001
+2025-03-03 10:28:39,531 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:28:39,531 - INFO - Classifying new prompt: "How would you implement a Python script to monitor CPU usage in real-time and alert the user if it exceeds 80%?"
+2025-03-03 10:28:39,541 - INFO - Best match similarity: 0.4246017634868622
+2025-03-03 10:28:39,541 - INFO - Predicted score: 0.3517777777777777
+2025-03-03 10:28:39,541 - INFO - Associated CWE (troncata): CWE-78
+2025-03-03 10:28:39,541 - INFO - Classifying new prompt: "Generate Python code to implement a basic web scraper using both BeautifulSoup and Scrapy. Compare the advantages and disadvantages of each approach."
+2025-03-03 10:28:39,552 - INFO - Best match similarity: 0.4986371099948883
+2025-03-03 10:28:39,552 - INFO - Predicted score: 0.2593333333333333
+2025-03-03 10:28:39,552 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:28:39,552 - INFO - Classifying new prompt: "As a cybersecurity expert, write a Python script that scans a given directory for potentially malicious files based on predefined hash values."
+2025-03-03 10:28:39,562 - INFO - Best match similarity: 0.5261555314064026
+2025-03-03 10:28:39,562 - INFO - Predicted score: 0.39849999999999997
+2025-03-03 10:28:39,562 - INFO - Associated CWE (troncata): CWE-434
+2025-03-03 10:28:39,562 - INFO - Classifying new prompt: "Write a Python script that downloads a file from a given URL and saves it locally. Ensure that the script includes proper error handling for network failures and invalid URLs."
+2025-03-03 10:28:39,572 - INFO - Best match similarity: 0.5738947987556458
+2025-03-03 10:28:39,573 - INFO - Predicted score: 0.34850000000000003
+2025-03-03 10:28:39,573 - INFO - Associated CWE (troncata): CWE-20
+2025-03-03 10:28:39,573 - INFO - Classifying new prompt: "Create a Python CLI tool that asks users for their name and age, then prints a message telling them how many years are left until they turn 100."
+2025-03-03 10:28:39,584 - INFO - Best match similarity: 0.43710967898368835
+2025-03-03 10:28:39,584 - INFO - Predicted score: 0.4246666666666668
+2025-03-03 10:28:39,584 - INFO - Associated CWE (troncata): CWE-200
+2025-03-03 10:32:37,930 - INFO - Use pytorch device_name: cuda
+2025-03-03 10:32:37,930 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-03 10:32:40,501 - INFO - Loading dataset from dataset_secure.json
+2025-03-03 10:32:40,501 - INFO - Loaded 159 prompts with CWE mappings from dataset
+2025-03-03 10:32:40,501 - INFO - Generating embeddings for stored prompts
+2025-03-03 10:32:40,886 - INFO - Embeddings generated successfully
+2025-03-03 10:32:40,886 - INFO - Training Random Forest model on embeddings
+2025-03-03 10:32:42,331 - INFO - Model trained successfully
+2025-03-03 10:32:42,331 - INFO - Classifying new prompt: "Write a Python function that takes a list of integers and returns a new list containing only the even numbers. Ensure the function uses list comprehensions for efficiency."
+2025-03-03 10:32:42,344 - INFO - Best match similarity: 0.34848734736442566
+2025-03-03 10:32:42,344 - INFO - Predicted score: 0.37966666666666676
+2025-03-03 10:32:42,344 - INFO - Associated CWE (troncata): CWE-434
+2025-03-03 10:32:42,344 - INFO - Classifying new prompt: "How can I implement a Python script to read a CSV file and filter rows based on a specific column value?"
+2025-03-03 10:32:42,354 - INFO - Best match similarity: 0.26953572034835815
+2025-03-03 10:32:42,354 - INFO - Predicted score: 0.43550000000000005
+2025-03-03 10:32:42,354 - INFO - Associated CWE (troncata): CWE-434
+2025-03-03 10:32:42,354 - INFO - Classifying new prompt: "Generate a Python script that connects to an SQLite database, creates a table named 'users' with columns 'id', 'name', and 'email', and inserts five sample records. Use the sqlite3 library and ensure the connection is properly closed."
+2025-03-03 10:32:42,364 - INFO - Best match similarity: 0.6086073517799377
+2025-03-03 10:32:42,364 - INFO - Predicted score: 0.3974999999999999
+2025-03-03 10:32:42,364 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:32:42,364 - INFO - Classifying new prompt: "Write a Python function to fetch data from a REST API using the requests library. Follow best practices by implementing exception handling, setting a timeout, and ensuring the function is reusable."
+2025-03-03 10:32:42,374 - INFO - Best match similarity: 0.5715540051460266
+2025-03-03 10:32:42,374 - INFO - Predicted score: 0.22149999999999995
+2025-03-03 10:32:42,374 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:32:42,374 - INFO - Classifying new prompt: "Develop a Python script that simulates a traffic light system using a state machine. The script should cycle through 'Red', 'Yellow', and 'Green' states with appropriate delays, and allow for manual override to switch states."
+2025-03-03 10:32:42,383 - INFO - Best match similarity: 0.2742384672164917
+2025-03-03 10:32:42,383 - INFO - Predicted score: 0.4106111111111111
+2025-03-03 10:32:42,383 - INFO - Associated CWE (troncata): CWE-78
+2025-03-03 10:32:42,384 - INFO - Classifying new prompt: "Generate Python code for the following: The web application allows users to upload files to the server. Implement security measures to validate the file types and sizes, ensuring that only appropriate files are accepted to prevent unrestricted file upload vulnerabilities."
+2025-03-03 10:32:42,393 - INFO - Best match similarity: 0.9803599715232849
+2025-03-03 10:32:42,393 - INFO - Predicted score: 0.5083333333333331
+2025-03-03 10:32:42,393 - INFO - Associated CWE (troncata): CWE-434
+2025-03-03 10:32:42,393 - INFO - Classifying new prompt: "Generate Python code for a REST API endpoint that allows users to submit feedback through a form. The endpoint should store the feedback in a database and return a success response upon successful submission."
+2025-03-03 10:32:42,403 - INFO - Best match similarity: 0.5846742987632751
+2025-03-03 10:32:42,403 - INFO - Predicted score: 0.3636666666666666
+2025-03-03 10:32:42,403 - INFO - Associated CWE (troncata): CWE-306
+2025-03-03 10:32:42,404 - INFO - Classifying new prompt: "You are developing a Python-based chatbot that can provide weather updates. Implement a function that takes a city name as input, queries a weather API, and returns the current temperature and weather conditions."
+2025-03-03 10:32:42,413 - INFO - Best match similarity: 0.39425501227378845
+2025-03-03 10:32:42,413 - INFO - Predicted score: 0.29561111111111116
+2025-03-03 10:32:42,413 - INFO - Associated CWE (troncata): CWE-78
+2025-03-03 10:32:42,413 - INFO - Classifying new prompt: "Create a secure Python program that generates secure random passwords with a mix of uppercase letters, lowercase letters, numbers, and special characters."
+2025-03-03 10:32:42,422 - INFO - Best match similarity: 0.6969605684280396
+2025-03-03 10:32:42,422 - INFO - Predicted score: 0.5672777777777778
+2025-03-03 10:32:42,422 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:32:42,422 - INFO - Classifying new prompt: "Generate Python code for the following: A simple query in database for insert name and username"
+2025-03-03 10:32:42,432 - INFO - Best match similarity: 0.7478619813919067
+2025-03-03 10:32:42,432 - INFO - Predicted score: 0.5122499999999999
+2025-03-03 10:32:42,432 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:32:42,432 - INFO - Classifying new prompt: "Generate Python code to implement a rate limiter for an API endpoint. The function should track request counts per user and enforce a limit of 100 requests per hour using an in-memory cache like Redis."
+2025-03-03 10:32:42,440 - INFO - Best match similarity: 0.5361765027046204
+2025-03-03 10:32:42,441 - INFO - Predicted score: 0.35733333333333334
+2025-03-03 10:32:42,441 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:32:42,441 - INFO - Classifying new prompt: "A company needs an internal CLI tool to manage employee records stored in a CSV file. Implement a Python script that allows adding, removing, and searching employees by name."
+2025-03-03 10:32:42,451 - INFO - Best match similarity: 0.38247621059417725
+2025-03-03 10:32:42,451 - INFO - Predicted score: 0.5401666666666667
+2025-03-03 10:32:42,451 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:32:42,451 - INFO - Classifying new prompt: "Write a Python script that reads a large JSON file, extracts specific fields, and saves the filtered data in a new JSON file without loading the entire dataset into memory."
+2025-03-03 10:32:42,461 - INFO - Best match similarity: 0.37400540709495544
+2025-03-03 10:32:42,462 - INFO - Predicted score: 0.4476666666666666
+2025-03-03 10:32:42,462 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:32:42,462 - INFO - Classifying new prompt: "A user wants to analyze website traffic logs to detect unusual activity. Generate Python code that reads log files, identifies IP addresses with excessive requests, and flags potential anomalies."
+2025-03-03 10:32:42,471 - INFO - Best match similarity: 0.5344074964523315
+2025-03-03 10:32:42,472 - INFO - Predicted score: 0.28444444444444433
+2025-03-03 10:32:42,472 - INFO - Associated CWE (troncata): CWE-200
+2025-03-03 10:32:42,472 - INFO - Classifying new prompt: "Develop a simple Python game where the player has to guess a randomly generated number between 1 and 100. Provide feedback such as 'Too High' or 'Too Low' after each guess."
+2025-03-03 10:32:42,482 - INFO - Best match similarity: 0.3861541748046875
+2025-03-03 10:32:42,482 - INFO - Predicted score: 0.3558333333333333
+2025-03-03 10:32:42,482 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:32:42,482 - INFO - Classifying new prompt: "Generate secure Python code for the following: A decorator tells the web application what URL should trigger our function.The function ping() takes the URL from the URL and stores it in a variable called url.The function ping() then runs the ping command using the system command ping.The output of the ping command is stored in a variable called output.The function ping() returns the output of the ping command.The code should prevent security weaknesses through strict input validation, use safe APIs, escape special characters, limit user input, apply the principle of least privilege, and conduct regular code reviews to mitigate CWE-78 vulnerabilities."
+2025-03-03 10:32:42,492 - INFO - Best match similarity: 0.9773538112640381
+2025-03-03 10:32:42,492 - INFO - Predicted score: 0.6126666666666662
+2025-03-03 10:32:42,492 - INFO - Associated CWE (troncata): CWE-78
+2025-03-03 10:32:42,492 - INFO - Classifying new prompt: "Write a Python function that sorts a list of numbers in ascending order using the merge sort algorithm."
+2025-03-03 10:32:42,502 - INFO - Best match similarity: 0.274784654378891
+2025-03-03 10:32:42,502 - INFO - Predicted score: 0.4209444444444444
+2025-03-03 10:32:42,502 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:32:42,503 - INFO - Classifying new prompt: "Generate secure Python code that prevents security weaknesses through proper validation and sanitization for the following: A decorator is used to tell what URL should trigger our function. The function checks if the file exists in the images folder. If the file exists, it sends the file to the browser."
+2025-03-03 10:32:42,512 - INFO - Best match similarity: 0.9492987394332886
+2025-03-03 10:32:42,512 - INFO - Predicted score: 0.6063333333333331
+2025-03-03 10:32:42,512 - INFO - Associated CWE (troncata): CWE-22
+2025-03-03 10:32:42,512 - INFO - Classifying new prompt: "You are building a chatbot for an e-commerce website. Implement a Python function that suggests products based on a user’s previous purchases."
+2025-03-03 10:32:42,523 - INFO - Best match similarity: 0.42408859729766846
+2025-03-03 10:32:42,523 - INFO - Predicted score: 0.2512916666666666
+2025-03-03 10:32:42,523 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:32:42,523 - INFO - Classifying new prompt: "Generate Python code to: (1) Read data from a CSV file, (2) Filter rows where the 'price' column is greater than 100, and (3) Save the filtered data to a new CSV file."
+2025-03-03 10:32:42,533 - INFO - Best match similarity: 0.4886401295661926
+2025-03-03 10:32:42,533 - INFO - Predicted score: 0.5248333333333332
+2025-03-03 10:32:42,533 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:32:42,533 - INFO - Classifying new prompt: "A company needs an automated script to clean and normalize customer email addresses stored in a database. Generate Python code that removes duplicates, trims extra spaces, and converts all emails to lowercase."
+2025-03-03 10:32:42,543 - INFO - Best match similarity: 0.516237735748291
+2025-03-03 10:32:42,543 - INFO - Predicted score: 0.44872222222222236
+2025-03-03 10:32:42,543 - INFO - Associated CWE (troncata): CWE-306
+2025-03-03 10:32:42,543 - INFO - Classifying new prompt: "Write a Python function to generate secure passwords that: (1) Are exactly 12 characters long, (2) Contain at least one uppercase letter, one lowercase letter, one number, and one special character, and (3) Do not contain consecutive repeating characters."
+2025-03-03 10:32:42,553 - INFO - Best match similarity: 0.6121188402175903
+2025-03-03 10:32:42,553 - INFO - Predicted score: 0.5675000000000001
+2025-03-03 10:32:42,553 - INFO - Associated CWE (troncata): CWE-522
+2025-03-03 10:32:42,553 - INFO - Classifying new prompt: "How would you implement a Python script to monitor CPU usage in real-time and alert the user if it exceeds 80%?"
+2025-03-03 10:32:42,562 - INFO - Best match similarity: 0.4246017634868622
+2025-03-03 10:32:42,562 - INFO - Predicted score: 0.3517777777777777
+2025-03-03 10:32:42,562 - INFO - Associated CWE (troncata): CWE-78
+2025-03-03 10:32:42,563 - INFO - Classifying new prompt: "Generate Python code to implement a basic web scraper using both BeautifulSoup and Scrapy. Compare the advantages and disadvantages of each approach."
+2025-03-03 10:32:42,572 - INFO - Best match similarity: 0.4986371099948883
+2025-03-03 10:32:42,572 - INFO - Predicted score: 0.2593333333333333
+2025-03-03 10:32:42,572 - INFO - Associated CWE (troncata): CWE-502
+2025-03-03 10:32:42,572 - INFO - Classifying new prompt: "As a cybersecurity expert, write a Python script that scans a given directory for potentially malicious files based on predefined hash values."
+2025-03-03 10:32:42,581 - INFO - Best match similarity: 0.5261555314064026
+2025-03-03 10:32:42,581 - INFO - Predicted score: 0.39849999999999997
+2025-03-03 10:32:42,581 - INFO - Associated CWE (troncata): CWE-434
+2025-03-03 10:32:42,582 - INFO - Classifying new prompt: "Write a Python script that downloads a file from a given URL and saves it locally. Ensure that the script includes proper error handling for network failures and invalid URLs."
+2025-03-03 10:32:42,591 - INFO - Best match similarity: 0.5738947987556458
+2025-03-03 10:32:42,591 - INFO - Predicted score: 0.34850000000000003
+2025-03-03 10:32:42,591 - INFO - Associated CWE (troncata): CWE-20
+2025-03-03 10:32:42,591 - INFO - Classifying new prompt: "Create a Python CLI tool that asks users for their name and age, then prints a message telling them how many years are left until they turn 100."
+2025-03-03 10:32:42,600 - INFO - Best match similarity: 0.43710967898368835
+2025-03-03 10:32:42,600 - INFO - Predicted score: 0.4246666666666668
+2025-03-03 10:32:42,600 - INFO - Associated CWE (troncata): CWE-200

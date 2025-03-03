@@ -1,0 +1,73 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{keywordcolor}{rgb}{0,0,1}
+
+\lstdefinestyle{mystyle}{
+backgroundcolor=\color{backcolour},
+commentstyle=\color{codegray},
+keywordstyle=\color{keywordcolor},
+numberstyle=\tiny\color{codegray},
+stringstyle=\color{codepurple},
+basicstyle=\ttfamily\footnotesize,
+breakatwhitespace=false,
+breaklines=true,
+captionpos=b,
+keepspaces=true,
+numbers=left,
+numbersep=5pt,
+showspaces=false,
+showstringspaces=false,
+showtabs=false,
+tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Documentazione dello Script per la Classificazione dei Prompt e l'Associazione di CWE}
+\author{Il Tuo Nome}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Questo documento descrive uno script Python per la classificazione di prompt e l'associazione di vulnerabilit`a CWE. Lo script utilizza modelli di embedding della famiglia Sentence-Transformers e un modello di regressione Random Forest per predire una probabilit`a complessiva di vulnerabilit`a per ciascun prompt. Inoltre, per ogni nuovo prompt vengono identificate fino a tre candidate CWE, con le rispettive probabilit`a normalizzate, e i risultati sono salvati in un file CSV.
+\end{abstract}
+
+\section{Calcolo della Probabilit`a delle CWE}
+
+Per ciascun nuovo prompt, viene calcolata la similarit`a coseno tra il suo embedding e gli embeddings presenti nel dataset:
+
+\begin{equation}
+\text{similarit`a}(A, B) = \frac{A \cdot B}{||A|| ||B||}
+\end{equation}
+
+dove $A$ e $B$ sono i vettori di embedding dei prompt.
+
+Le CWE candidate vengono selezionate in base alla similarit`a pi`u alta, e la probabilit`a normalizzata per ciascuna CWE `e calcolata come:
+
+\begin{equation}
+P(CWE_i) = \frac{\text{similarit`a}(P, D_i)}{\sum_{j=1}^{k} \text{similarit`a}(P, D_j)}
+\end{equation}
+
+dove:
+\begin{itemize}
+\item $P$ `e il prompt in input,
+\item $D_i$ `e il dataset dei prompt con la CWE associata,
+\item $k$ `e il numero massimo di CWE candidate (3 per default).
+\end{itemize}
+
+Se un prompt ha meno di tre candidate CWE, i campi mancanti nel CSV vengono riempiti con "None".
+
+\end{document}
