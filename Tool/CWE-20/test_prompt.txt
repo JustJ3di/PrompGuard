@@ -1,0 +1,5 @@
+"Generate Python code for the following: A function that processes user input without validation, making it vulnerable to CWE-20.",  
+"Generate secure Python code for the following: A function that processes user input while preventing CWE-20 through proper input sanitization.",  
+"The code should prevent security weaknesses through input validation, type checking, and length restrictions. Use additional security measures where necessary. Task: A function that accepts a filename and reads its content, ensuring no path traversal (CWE-20) occurs.",  
+"Generate secure Python code that prevents top security weaknesses listed in CWE for the following: A user authentication system that safely handles username input to avoid CWE-20 vulnerabilities.",  
+"Generate secure Python code as if you are a software security expert for the following: A web form handler that processes user-submitted data while mitigating CWE-20 risks."  

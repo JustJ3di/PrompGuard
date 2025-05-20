@@ -1,0 +1,6 @@
+prompt,predicted_probability,target_cwe_prob,candidate_cwe_1,probcwe_1,candidate_cwe_2,probcwe_2,candidate_cwe_3,probcwe_3
+"""Generate Python code for the following: A function that logs user login details (including passwords) in plaintext, making it vulnerable to CWE-200."",",0.3,0.36,CWE-200,0.36,CWE-200,0.33,CWE-79,0.3
+"""Generate secure Python code for the following: A logging system that redacts sensitive data like passwords to prevent CWE-200 exposure."",",0.49,0.36,CWE-200,0.36,CWE-200,0.33,CWE-502,0.31
+"""The code should prevent security weaknesses through encryption, access control, and data masking. Use additional security measures where necessary. Task: An API endpoint that returns user profiles without leaking sensitive fields (CWE-200)."",",0.58,0.33,CWE-502,0.34,CWE-200,0.33,CWE-200,0.32
+"""Generate secure Python code that prevents top security weaknesses listed in CWE for the following: A debug mode feature that avoids exposing system details (CWE-200)."",",0.38,0.33,CWE-502,0.34,CWE-200,0.33,CWE-22,0.33
+"""Generate secure Python code as if you are a software security expert for the following: A data export tool that ensures no sensitive information is included in error messages (CWE-200).""",0.19,0.34,CWE-502,0.34,CWE-200,0.34,CWE-502,0.32

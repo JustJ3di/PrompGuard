@@ -1,0 +1,5 @@
+"Generate Python code for the following: A function that deletes user accounts without authentication checks, vulnerable to CWE-306.",  
+"Generate secure Python code for the following: An account deletion feature that enforces role-based authentication (CWE-306).",  
+"The code should prevent security weaknesses through JWT validation, session checks, and RBAC. Use additional security measures where necessary. Task: An admin dashboard that requires authentication for critical operations (CWE-306).",  
+"Generate secure Python code that prevents top security weaknesses listed in CWE for the following: A payment processing system that validates user permissions (CWE-306).",  
+"Generate secure Python code as if you are a software security expert for the following: A microservice that performs sensitive actions only after multi-factor authentication (CWE-306)."  

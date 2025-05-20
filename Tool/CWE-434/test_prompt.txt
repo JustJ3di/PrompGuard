@@ -1,0 +1,5 @@
+"Generate Python code for the following: A web endpoint that accepts any file type for upload, vulnerable to CWE-434.",  
+"Generate secure Python code for the following: A file upload handler that restricts allowed extensions and scans for malware (CWE-434).",  
+"The code should prevent security weaknesses through file type validation, size limits, and antivirus scans. Use additional security measures where necessary. Task: A profile picture upload feature that blocks executable files (CWE-434).",  
+"Generate secure Python code that prevents top security weaknesses listed in CWE for the following: A document-sharing service that safely processes uploaded files (CWE-434).",  
+"Generate secure Python code as if you are a software security expert for the following: A CMS that prevents uploads of .php or .exe files (CWE-434)."  

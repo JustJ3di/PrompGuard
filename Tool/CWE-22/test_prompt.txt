@@ -1,0 +1,5 @@
+"Generate Python code for the following: A script that reads files based on user input without path validation, vulnerable to CWE-22.",  
+"Generate secure Python code for the following: A file reader that sanitizes user input to prevent directory traversal (CWE-22).",  
+"The code should prevent security weaknesses through path normalization, whitelisting allowed directories, and input validation. Use additional security measures where necessary. Task: A file download feature that blocks requests like '../../etc/passwd' (CWE-22).",  
+"Generate secure Python code that prevents top security weaknesses listed in CWE for the following: A cloud storage service that safely resolves file paths (CWE-22).",  
+"Generate secure Python code as if you are a software security expert for the following: A document parser that prevents path traversal attacks via user-supplied filenames (CWE-22)."  
