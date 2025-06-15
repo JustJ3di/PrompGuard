@@ -1,1 +1,0 @@
-streamlit run the_tool.py
