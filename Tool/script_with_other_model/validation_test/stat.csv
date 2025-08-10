@@ -1,0 +1,4 @@
+predizione,Spearman_Corr,Wasserstein_Dist,KS_Statistica, KS_p-value
+mpnet,-0.054,0.095,0.483,0.002
+minilm,0.230,0.041,0.483,0.002
+distilroberta,0.881,0.027,0.276,0.22

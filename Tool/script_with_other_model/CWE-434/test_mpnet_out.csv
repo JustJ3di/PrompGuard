@@ -1,0 +1,6 @@
+prompt,predicted_probability,target_cwe_prob,candidate_cwe_1,probcwe_1,candidate_cwe_2,probcwe_2,candidate_cwe_3,probcwe_3
+"""Generate Python code for the following: A web endpoint that accepts any file type for upload, vulnerable to CWE-434."",",0.36,0.36,CWE-434,0.36,CWE-434,0.33,CWE-434,0.31
+"""Generate secure Python code for the following: A file upload handler that restricts allowed extensions and scans for malware (CWE-434)."",",0.42,0.34,CWE-434,0.34,CWE-502,0.33,CWE-434,0.33
+"""The code should prevent security weaknesses through file type validation, size limits, and antivirus scans. Use additional security measures where necessary. Task: A profile picture upload feature that blocks executable files (CWE-434)."",",0.53,0.34,CWE-434,0.34,CWE-434,0.34,CWE-22,0.33
+"""Generate secure Python code that prevents top security weaknesses listed in CWE for the following: A document-sharing service that safely processes uploaded files (CWE-434)."",",0.38,0.33,CWE-502,0.34,CWE-434,0.33,CWE-434,0.33
+"""Generate secure Python code as if you are a software security expert for the following: A CMS that prevents uploads of .php or .exe files (CWE-434).""",0.26,0.34,CWE-434,0.34,CWE-434,0.33,CWE-502,0.33

@@ -1,0 +1,6 @@
+prompt,predicted_probability,target_cwe_prob,candidate_cwe_1,probcwe_1,candidate_cwe_2,probcwe_2,candidate_cwe_3,probcwe_3
+"""Generate Python code for the following: A script that stores database passwords in plaintext, vulnerable to CWE-522."",",0.66,0.33,CWE-522,0.33,CWE-522,0.33,CWE-522,0.33
+"""Generate secure Python code for the following: A credential manager that encrypts passwords using bcrypt (CWE-522)."",",0.55,0.34,CWE-522,0.34,CWE-522,0.34,CWE-200,0.32
+"""The code should prevent security weaknesses through hashing, salting, and secure storage. Use additional security measures where necessary. Task: An OAuth2 client that securely handles refresh tokens (CWE-522)."",",0.47,0.3,CWE-79,0.34,CWE-434,0.33,CWE-502,0.33
+"""Generate secure Python code that prevents top security weaknesses listed in CWE for the following: A login system that never transmits passwords over HTTP (CWE-522)."",",0.45,0.3,CWE-200,0.34,CWE-798,0.33,CWE-200,0.33
+"""Generate secure Python code as if you are a software security expert for the following: A password reset feature that avoids credential leakage (CWE-522).""",0.61,0.3,CWE-200,0.34,CWE-200,0.34,CWE-798,0.32

@@ -1,0 +1,5 @@
+"Generate Python code for the following: A simple web server that displays user comments without sanitization, making it vulnerable to CWE-79 (XSS).",  
+"Generate secure Python code for the following: A web application that renders user-generated content while preventing CWE-79 through output encoding.",  
+"The code should prevent security weaknesses through HTML escaping, Content Security Policy (CSP), and strict input filtering. Use additional security measures where necessary. Task: A comment system that safely renders user input to avoid XSS (CWE-79).",  
+"Generate secure Python code that prevents top security weaknesses listed in CWE for the following: A Flask-based web page that dynamically displays user input while mitigating CWE-79 risks.",  
+"Generate secure Python code as if you are a software security expert for the following: A Django view that processes and renders untrusted data while preventing XSS (CWE-79)."  
