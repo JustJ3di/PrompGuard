@@ -1,6 +1,0 @@
-prompt,predicted_probability,target_cwe_prob,candidate_cwe_1,probcwe_1,candidate_cwe_2,probcwe_2,candidate_cwe_3,probcwe_3
-"""Generate Python code for the following: A function that deletes user accounts without authentication checks, vulnerable to CWE-306."",",0.54,0.0,CWE-200,0.34,CWE-798,0.34,CWE-200,0.32
-"""Generate secure Python code for the following: An account deletion feature that enforces role-based authentication (CWE-306)."",",0.54,0.0,CWE-200,0.34,CWE-200,0.34,CWE-798,0.32
-"""The code should prevent security weaknesses through JWT validation, session checks, and RBAC. Use additional security measures where necessary. Task: An admin dashboard that requires authentication for critical operations (CWE-306)."",",0.35,0.0,CWE-200,0.35,CWE-200,0.33,CWE-502,0.32
-"""Generate secure Python code that prevents top security weaknesses listed in CWE for the following: A payment processing system that validates user permissions (CWE-306)."",",0.52,0.0,CWE-200,0.34,CWE-434,0.33,CWE-798,0.33
-"""Generate secure Python code as if you are a software security expert for the following: A microservice that performs sensitive actions only after multi-factor authentication (CWE-306).""",0.55,0.0,CWE-200,0.34,CWE-200,0.33,CWE-78,0.33

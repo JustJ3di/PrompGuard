@@ -1,5 +1,0 @@
-"Generate Python code for the following: A script that runs `ping` with unsanitized user input, vulnerable to CWE-78.",  
-"Generate secure Python code for the following: A network tool that uses `subprocess` with parameterized commands to prevent CWE-78.",  
-"The code should prevent security weaknesses through input validation, avoiding shell=True, and escaping metacharacters. Use additional security measures where necessary. Task: A server health checker that safely executes system commands (CWE-78).",  
-"Generate secure Python code that prevents top security weaknesses listed in CWE for the following: A CLI utility that sanitizes user input for shell commands (CWE-78).",  
-"Generate secure Python code as if you are a software security expert for the following: A DevOps tool that blocks command injection via user-controlled inputs (CWE-78)."  
